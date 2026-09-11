@@ -1,0 +1,355 @@
+{
+  "sourceRoot": "/Users/aaron.correya/Pictures/elconceptz-photos",
+  "maxEdge": 2000,
+  "quality": 82,
+  "projects": {
+    "skylit-courtyard-villa": [
+      {
+        "src": "Akbar bathsha villa/IMG20220226124816.jpg",
+        "out": "01-courtyard-swing.jpg"
+      },
+      {
+        "src": "Akbar bathsha villa/IMG20220226124825.jpg",
+        "out": "02-courtyard-seating.jpg"
+      },
+      {
+        "src": "Akbar bathsha villa/IMG20220325101233.jpg",
+        "out": "03-dining.jpg"
+      },
+      {
+        "src": "Akbar bathsha villa/IMG20220701112646.jpg",
+        "out": "04-kitchen-island.jpg"
+      },
+      {
+        "src": "Akbar bathsha villa/IMG_20220515_111842.jpg",
+        "out": "05-living-tv-wall.jpg"
+      },
+      {
+        "src": "Akbar bathsha villa/IMG20220226124341.jpg",
+        "out": "06-bedroom-partition.jpg"
+      },
+      {
+        "src": "Akbar bathsha villa/IMG20220701112912.jpg",
+        "out": "07-wash-counter.jpg"
+      },
+      {
+        "src": "Akbar bathsha villa/IMG20220226124318.jpg",
+        "out": "08-curio-shelf.jpg"
+      },
+      {
+        "src": "Akbar bathsha villa/IMG20220226124300.jpg",
+        "out": "09-crockery-cabinet.jpg"
+      },
+      {
+        "src": "Akbar bathsha villa/IMG20220226124050.jpg",
+        "out": "10-bathroom-vanity.jpg"
+      }
+    ],
+    "teak-stone-villa": [
+      {
+        "src": "Premanand villa project/IMG20220531111218.jpg",
+        "out": "01-master-bedroom.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531111608.jpg",
+        "out": "02-formal-living.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531111544.jpg",
+        "out": "03-dining.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531110952.jpg",
+        "out": "04-home-theatre.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531111138.jpg",
+        "out": "05-wardrobes.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531111919.jpg",
+        "out": "06-bathroom-vanity.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531111640.jpg",
+        "out": "07-divider.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531111421.jpg",
+        "out": "08-passage-art-wall.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531111631.jpg",
+        "out": "09-living-divider.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531111034.jpg",
+        "out": "10-stair-hall.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531111054.jpg",
+        "out": "11-family-lounge.jpg"
+      },
+      {
+        "src": "Premanand villa project/IMG20220531112602.jpg",
+        "out": "12-coffee-table.jpg"
+      }
+    ],
+    "terracotta-jali-villa": [
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230126112613.jpg",
+        "out": "01-dining-wide.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230126111539.jpg",
+        "out": "02-upper-landing.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230125182617.jpg",
+        "out": "03-exterior.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230202150132.jpg",
+        "out": "04-kitchen-counter.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230126112316.jpg",
+        "out": "05-staircase-jali.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230126111658.jpg",
+        "out": "06-bedroom-balcony.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG_20230202_204707.jpg",
+        "out": "07-wash-niche.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG_20230202_204421.jpg",
+        "out": "08-living-tv-wall.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230126111548.jpg",
+        "out": "09-jali-stair-top.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230126112339.jpg",
+        "out": "10-courtyard-slate.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230202150602.jpg",
+        "out": "11-dining-table.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230126110817.jpg",
+        "out": "12-bedroom-grey.jpg"
+      },
+      {
+        "src": "vishnu vijayan Karunagappally/IMG20230202150037.jpg",
+        "out": "13-kitchen-sink.jpg"
+      }
+    ],
+    "walnut-apartment": [
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108122613.heic",
+        "out": "01-kitchen-wide.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108123106.heic",
+        "out": "02-foyer.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108122948.heic",
+        "out": "03-dining-crockery.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108124707.heic",
+        "out": "04-kitchen-sink-run.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108125611.heic",
+        "out": "05-passage-ceiling.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108125624.heic",
+        "out": "06-wash-counter.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20240910131122.heic",
+        "out": "07-green-shower.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108125406.heic",
+        "out": "08-pooja-cabinet.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108124715.heic",
+        "out": "09-kitchen-corner.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108123645.heic",
+        "out": "10-bathroom-grey.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108123956.heic",
+        "out": "11-bathroom-teal.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20240506182805.heic",
+        "out": "before-kitchen.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20240425154327.heic",
+        "out": "before-wash-counter.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20241108122958.heic",
+        "out": "after-wash-counter.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20240506183203.heic",
+        "out": "before-foyer.jpg"
+      },
+      {
+        "src": "Manoj kumar ,11A,DD Silver stone/IMG20240506182757.heic",
+        "out": "before-kitchen-sink.jpg"
+      }
+    ],
+    "brick-walnut-residence": [
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202104558.heic",
+        "out": "01-entrance.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202105308.heic",
+        "out": "02-kitchen-island-wide.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202105456.heic",
+        "out": "03-dining.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG_20260723_112026.jpg",
+        "out": "04-facade-twilight.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260122173604.heic",
+        "out": "05-side-garden.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202105527.heic",
+        "out": "06-dining-kitchen.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202130459.heic",
+        "out": "07-island-detail.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202105735.heic",
+        "out": "08-bedroom.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260305110704.heic",
+        "out": "09-staircase.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202105926.heic",
+        "out": "10-bathtub.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202113415.heic",
+        "out": "11-study-wardrobe.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202104608.heic",
+        "out": "12-front-door.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260122174023.heic",
+        "out": "13-porch-plant.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202113759.heic",
+        "out": "14-balcony.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202114158.heic",
+        "out": "15-louvre-screen.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202113516.heic",
+        "out": "16-double-vanity.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202113337.heic",
+        "out": "17-bedroom-blinds.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260122173556.heic",
+        "out": "18-garden-path.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20250813120739.heic",
+        "out": "before-shower.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202114008.heic",
+        "out": "after-shower.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20250822130416.heic",
+        "out": "before-powder-room.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202113854.heic",
+        "out": "after-powder-room.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG_20260723_112149.jpg",
+        "out": "before-facade.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20250811113641.heic",
+        "out": "before-elevation.jpg"
+      },
+      {
+        "src": "Rekha Menon toilets plumbing lines/IMG20260202104918.heic",
+        "out": "after-elevation.jpg"
+      }
+    ],
+    "cement-timber-villa": [
+      {
+        "src": "Adv . Nandakumar villa/IMG20220514102430.jpg",
+        "out": "01-passage.jpg"
+      },
+      {
+        "src": "Adv . Nandakumar villa/IMG20220514102441.jpg",
+        "out": "02-double-height-wall.jpg"
+      },
+      {
+        "src": "Adv . Nandakumar villa/IMG20220514103557.jpg",
+        "out": "03-exterior.jpg"
+      },
+      {
+        "src": "Adv . Nandakumar villa/IMG20220514102547.jpg",
+        "out": "04-vestibule.jpg"
+      },
+      {
+        "src": "Adv . Nandakumar villa/IMG20230215114203.jpg",
+        "out": "05-bathroom.jpg"
+      },
+      {
+        "src": "Adv . Nandakumar villa/IMG20230215114147.jpg",
+        "out": "06-wardrobe.jpg"
+      },
+      {
+        "src": "Adv . Nandakumar villa/IMG20230215114832.jpg",
+        "out": "07-passage-plants.jpg"
+      },
+      {
+        "src": "Adv . Nandakumar villa/IMG20230215114841.jpg",
+        "out": "08-veranda-lawn.jpg"
+      }
+    ]
+  }
+}

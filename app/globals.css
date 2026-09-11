@@ -1,0 +1,357 @@
+@import "tailwindcss";
+
+/*
+  El Conceptz design tokens.
+  Palette values come from the brand brief. Warm neutrals dominate, teal is the
+  working accent, brick orange is reserved for small moments of emphasis.
+*/
+:root {
+  --ivory: #f7f4ef;
+  --warm-white: #fcfbf8;
+  --linen: #efe9e1;
+  --stone: #e8e2d9;
+
+  --slate-deep: #2f3941;
+  --slate-muted: #556772;
+  --gray-muted: #7b858c;
+
+  --teal: #2f8f8a;
+  --teal-soft: #5da39f;
+  --brick: #f4510a;
+  --terracotta: #c66b43;
+
+  /* Derived tints used for hairlines and tinted shadows */
+  --hairline: rgb(47 57 65 / 0.12);
+  --hairline-strong: rgb(47 57 65 / 0.22);
+  --hairline-on-dark: rgb(247 244 239 / 0.14);
+  --shadow-tint: 47 57 65;
+
+  /* Radius system: rectangles are 6px, circular controls are full. */
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 10px;
+
+  /* Layout */
+  --nav-height: 72px;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --content-max: 1440px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 220ms;
+  --duration: 480ms;
+  --duration-slow: 900ms;
+}
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-warm-white: var(--warm-white);
+  --color-linen: var(--linen);
+  --color-stone: var(--stone);
+  --color-slate: var(--slate-deep);
+  --color-slate-muted: var(--slate-muted);
+  --color-gray-muted: var(--gray-muted);
+  --color-teal: var(--teal);
+  --color-teal-soft: var(--teal-soft);
+  --color-brick: var(--brick);
+  --color-terracotta: var(--terracotta);
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, "Times New Roman", serif;
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius-lg);
+
+  --ease-out-quint: var(--ease-out);
+  --ease-in-out-cubic: var(--ease-in-out);
+
+  --breakpoint-xs: 30rem;
+}
+
+html {
+  color-scheme: light;
+  overflow-x: clip;
+  scroll-padding-top: var(--nav-height);
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--slate-deep);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background: rgb(47 143 138 / 0.22);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Typography primitives */
+.font-display {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+  font-feature-settings: "kern", "liga";
+}
+
+.font-display-light {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.text-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.text-meta {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--slate-muted);
+}
+
+.measure {
+  max-width: 62ch;
+}
+
+.measure-narrow {
+  max-width: 44ch;
+}
+
+/* Page container */
+.wrap {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Hairline rules tinted to the page */
+.rule {
+  border-color: var(--hairline);
+}
+
+/* Section surfaces: each "room" of the page */
+.room-ivory {
+  --room: var(--ivory);
+  background-color: var(--room);
+}
+.room-white {
+  --room: var(--warm-white);
+  background-color: var(--room);
+}
+.room-linen {
+  --room: var(--linen);
+  background-color: var(--room);
+}
+.room-stone {
+  --room: var(--stone);
+  background-color: var(--room);
+}
+.room-slate {
+  --room: var(--slate-deep);
+  background-color: var(--room);
+  color: var(--ivory);
+}
+
+/* Photography frames */
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background-color: var(--stone);
+  isolation: isolate;
+}
+.photo-bleed {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--stone);
+  isolation: isolate;
+}
+
+/* Underline link used for inline text links */
+.link-line {
+  position: relative;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size var(--duration) var(--ease-out);
+}
+.link-line:hover,
+.link-line:focus-visible {
+  background-size: 0% 1px;
+  background-position: 100% 100%;
+}
+
+/* Fine grain for the deep slate room, applied to a fixed pseudo layer only */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Hide scrollbar but keep scrolling for horizontal strips */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Contact icon choreography (CSS keyframes, all under 600ms) */
+@keyframes phone-ring {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  60% {
+    transform: rotate(-6deg);
+  }
+  80% {
+    transform: rotate(4deg);
+  }
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+@keyframes pin-drop {
+  0% {
+    transform: translateY(-6px);
+  }
+  55% {
+    transform: translateY(1px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes pin-pulse {
+  0% {
+    transform: scaleX(0.4);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scaleX(1.6);
+    opacity: 0;
+  }
+}
+@keyframes knob-breathe {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .knob-breathe {
+    animation: knob-breathe 2.6s var(--ease-in-out) infinite;
+  }
+}
+
+@keyframes plane-out {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(14px, -14px);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .action-phone:is(:hover, :focus-visible) .icon-phone {
+    animation: phone-ring 520ms var(--ease-in-out);
+  }
+  .action-whatsapp:is(:hover, :focus-visible) .icon-ripple {
+    animation: ripple 700ms var(--ease-out) forwards;
+  }
+  .action-location:is(:hover, :focus-visible) .icon-pin {
+    animation: pin-drop 560ms var(--ease-out);
+  }
+  .action-location:is(:hover, :focus-visible) .icon-pin-shadow {
+    animation: pin-pulse 640ms var(--ease-out) forwards;
+  }
+  .action-email:is(:hover, :focus-visible) .icon-plane {
+    animation: plane-out 620ms var(--ease-out) forwards;
+  }
+}
+
+/* Reduced motion: collapse durations globally as a safety net */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
