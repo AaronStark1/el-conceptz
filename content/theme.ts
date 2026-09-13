@@ -12,6 +12,9 @@ export const palette = {
   grayMuted: "#7B858C",
   teal: "#2F8F8A",
   tealSoft: "#5DA39F",
+  tealDeep: "#26736F",
+  tealInk: "#1F5F5B",
+  tealLight: "#7FC1BC",
   brick: "#F4510A",
   terracotta: "#C66B43",
 } as const;

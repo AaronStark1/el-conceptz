@@ -7,16 +7,18 @@ type Variant = "primary" | "quiet";
 type Tone = "light" | "dark";
 
 const base =
-  "group relative inline-flex h-12 items-center gap-3 rounded-md px-6 text-[0.8125rem] font-semibold tracking-[0.08em] uppercase whitespace-nowrap transition-[transform,background-color,color,border-color] duration-300 ease-[var(--ease-out)] active:scale-[0.98] focus-visible:outline-offset-4";
+  "group relative inline-flex h-12 items-center gap-3 rounded-md px-6 text-[0.8125rem] font-bold tracking-[0.08em] uppercase whitespace-nowrap transition-[transform,background-color,color,border-color] duration-300 ease-[var(--ease-out)] active:scale-[0.98] focus-visible:outline-offset-4";
 
 const variants: Record<Tone, Record<Variant, string>> = {
   light: {
-    primary: "bg-slate text-ivory hover:bg-[#25313a]",
-    quiet: "border border-[var(--hairline-strong)] text-slate hover:border-slate",
+    primary: "bg-teal-deep text-ivory hover:bg-teal-ink [--rule:var(--ivory)]",
+    quiet:
+      "border border-[var(--hairline-strong)] text-slate hover:border-teal hover:text-teal-deep",
   },
   dark: {
     primary: "bg-ivory text-slate hover:bg-white",
-    quiet: "border border-[var(--hairline-on-dark)] text-ivory hover:border-ivory/60",
+    quiet:
+      "border border-[var(--hairline-on-dark)] text-ivory hover:border-teal-light hover:text-teal-light",
   },
 };
 
@@ -30,7 +32,7 @@ export interface ButtonLinkProps extends Omit<ComponentProps<typeof Link>, "clas
 
 /**
  * Text buttons used for the few calls to action on the page.
- * Hover: the arrow steps forward and a short orange rule grows under the label.
+ * Hover: the arrow steps forward and a short rule grows under the label (ivory on the teal fill, brick elsewhere).
  */
 export function ButtonLink({
   variant = "primary",
@@ -46,7 +48,7 @@ export function ButtonLink({
         {children}
         <span
           aria-hidden
-          className="absolute -bottom-1 left-0 h-px w-0 bg-brick transition-[width] duration-500 ease-[var(--ease-out)] group-hover:w-full group-focus-visible:w-full"
+          className="absolute -bottom-1 left-0 h-px w-0 bg-[var(--rule,var(--brick))] transition-[width] duration-500 ease-[var(--ease-out)] group-hover:w-full group-focus-visible:w-full"
         />
       </span>
       {arrow && (

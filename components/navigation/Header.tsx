@@ -61,8 +61,8 @@ export function Header() {
                       href={item.href}
                       aria-current={isActive ? "true" : undefined}
                       className={cn(
-                        "block py-2 text-[0.8125rem] font-medium tracking-[0.04em] transition-colors duration-300",
-                        isActive ? "text-slate" : "text-slate-muted hover:text-slate"
+                        "block py-2 text-[0.8125rem] font-semibold tracking-[0.04em] transition-colors duration-300",
+                        isActive ? "text-slate" : "text-slate-muted hover:text-teal-ink"
                       )}
                     >
                       {item.label}
@@ -84,7 +84,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <Link
               href={contactCta.href}
-              className="link-line hidden text-[0.8125rem] font-semibold tracking-[0.04em] text-slate lg:inline-block"
+              className="link-line hidden text-[0.8125rem] font-bold tracking-[0.04em] text-teal-ink lg:inline-block"
             >
               {contactCta.label}
             </Link>
@@ -94,7 +94,7 @@ export function Header() {
               aria-expanded={menuOpen}
               aria-controls="site-menu"
               aria-label="Open menu"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-slate transition-colors hover:bg-[rgb(47_57_65/0.06)] lg:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-slate transition-colors hover:bg-teal/10 lg:hidden"
             >
               <Menu className="h-5 w-5" strokeWidth={1.75} aria-hidden />
             </button>

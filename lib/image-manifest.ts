@@ -6,508 +6,172 @@ export interface ImageMeta {
 }
 
 export const imageManifest: Record<string, ImageMeta> = {
-  "/images/projects/brick-walnut-residence/01-entrance.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoOAA4AA4BaJYwCdADiPPiaIAD+ms769UWXOXNFGUbganTDufUjhVWDxp5h5C1mdiQNzo2ObJOi60tyNac9jv3TTPacEXysqOMkQPAA",
-  },
-  "/images/projects/brick-walnut-residence/02-kitchen-island-wide.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoOAA4AA4BaJQBOgMW0jtPxAAD+xGGhuDR8wrsfINfK78Z5kUoM+doM0BVTukZ4kw28Osx0fGmGhbOyF9dk1gznq5X90FesmwLQ/dwhYJJraySmXQYAAA==",
-  },
-  "/images/projects/brick-walnut-residence/03-dining.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoOAA4AA4BaJYwCdAEQL+3XQwAA8Ucf3/VpGYWbNLEj0vK6JFfflGqB/ts5s+QVwVy9QXEj2DDxwZEEA0f3+J5Pnqcuh2pY20WCKa+QAAA=",
-  },
-  "/images/projects/brick-walnut-residence/04-facade-twilight.jpg": {
-    width: 2000,
-    height: 1274,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoOAAkAA4BaJZACdAEe2G3n0u+gAMtDd1+9yTchXfAmFZQxq4LVwEeMgnjg975aC+o7aPN3WJftB08SilKAiVvf9seUvrsKXRZ4GKSPlSxTX4vRi1m0HAnb8jkouq1SAAA=",
-  },
-  "/images/projects/brick-walnut-residence/05-side-garden.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZACdAB0/lPTs/Jm3OTpsdmAA/u1MW2LdwSydJa5vX+GsFYLUJ20+NNSnf/BOsQouNhF2AGNvsw/EjW01RwRv4odAvbdYKBloi63JMAiK5ZMbwzAhi0yJaD/DtMVlXf1gk9XY/bCOO0uOFy1OuL08xUYvSx4x3x2IBmUF9npvLh6ZsbdZELSAAAA=",
-  },
-  "/images/projects/brick-walnut-residence/06-dining-kitchen.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoOAA4AA4BaJYwCdAYtfzFcGx4AAPfL26BvZF76XLcTZrfEUmmPyQ6o+WEo9hzB35w0oRKtnJmSTjnp1e2WPpQ67+MNPol98gpkX1bds0bWfPLUjathESkAAAA=",
-  },
-  "/images/projects/brick-walnut-residence/07-island-detail.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoOAA4AA4BaJZgCdAD1RbqzRj8AAP6jaWkjGAwP8ADhkHsTEqUiq/W8TKmMlOu4t5m70NGch8CQKEvliqldRfUd90MIMJeFkFIDVfhFmUB2I+8OEH4pwlgcCs+5O7Yu2YAAAA==",
-  },
-  "/images/projects/brick-walnut-residence/08-bedroom.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAQCdASoOAA4AA4BaJZACdABhFMKtgAD+h3vmyUypOjczwA+TtlJc1Nt02vUeTn4tTI9Pf8tEJfs/3oFn5StiyzezRadw8qlU6ZNUn+UaPkbhsEjjI413r8a6U4h0RLeZwvJWgAA=",
-  },
-  "/images/projects/brick-walnut-residence/09-staircase.jpg": {
-    width: 902,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADQAwCdASoOAB8APu1iqU2ppaOiMAgBMB2JZQABHxuVHlOWhru6DMAA/vjAJLBk7L2ZBmOP7GPXfIY9t6KMHGTfm7PrwOTomq87FLtBpEj0VCuSZMqVLTMqGnoz/17K9Inf6lr7DN5vq/QGnjgnmL1TwQecZquAhFa4hFSFfO3zDzn3+rO9Sr2YzjgjL9h1zi4AAA==",
-  },
-  "/images/projects/brick-walnut-residence/10-bathtub.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoOAA4AA4BaJYgCdAED+jT9OEAAAP7mAU9CdaJp1Ds39l4q2kYhD1sNudZO/9uir+IRVpNKMsyzLpHz2mdpWbCDnrtVmsexuNfycBdIlXv9/r+PXho+N2bpJ84zkAAA",
-  },
-  "/images/projects/brick-walnut-residence/11-study-wardrobe.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwAgCdASoOAA4AA4BaJZgCdAYvDwJTTqARExmAAP39PoHrkupDjoWnRBv7uF6+v+/84soLf9YhogfFJ2my0A3Ide7it/Vkpu60Oi7hFRmS6/XeiCpnqt+jlevRrg3LFPjUlXWhCvVaFTL3S7S7l2mdROF7Q6rAAAA=",
-  },
-  "/images/projects/brick-walnut-residence/12-front-door.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoOAA4AA4BaJQBOgCPP1VXnC6AA+OR/ibNeD05PBzHJnPI1V/eoZJHV33+2OpPXi0QHXte6AcwTAXciUUiHuIkcsuKj8MTDOIA3smV2gfImKFVxmoOtUAAA",
-  },
-  "/images/projects/brick-walnut-residence/13-porch-plant.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYwCdACFrCPPzP62wDJ6XwwAA3OzfV4oMSjYsytVnhqvpN82bo1KesQbekKFwfpLhVDuJKPtscUBVmgvgoeJHH+zVFGyT7K9nDnXSL0wPaj4IfeXCBWsechw5lqL0jIrWU/d4ZUPGeP+wt8380s0ouBmD/4wAAAA=",
-  },
-  "/images/projects/brick-walnut-residence/14-balcony.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAgCdASoOAA4AA4BaJQBOj+ADGSWeiY2n64uoAP7d3Su2Hpmq6u/KvqmAMvy67ILBsXsDzxz+JZCFeXYMYxqgeFfINcUxKCXAXyjnBttkGAEdl5OMzps3PpgAAA==",
-  },
-  "/images/projects/brick-walnut-residence/15-louvre-screen.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JZQC/OB6H28PxcNfv+NXAAPnuWWkNd8Im730TNfMrEYBPRnVMIxlBqp9PXMnDTEK52guAutcU01IFIwTciePuzeyfI+dmmGnav5R4SewAAA==",
-  },
-  "/images/projects/brick-walnut-residence/16-double-vanity.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAQCdASoOAA4AA4BaJZgCdADOjRn4NsAA/nNEItGEtFW8acajgov0/9Szmi4tR+GolMWcPqdt0LW5VmKtgmI4FvSSVRIqMtH6OyXfZwTTgQ9QGfagYY+9BopY3WRNlnImuCQitrYm8sU9cgz5QAAA",
-  },
-  "/images/projects/brick-walnut-residence/17-bedroom-blinds.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAQCdASoOAA4AA4BaJQBOgBopa51qIAD0bbwAXroO0bpNiQhKzm90nyychp/cEA2TuXSvBCRafHJizyekuQ19jFFx+kf7kIAuSeiT1yR7DeOY4pDq2VXYilq4WWWotTpLoZ7wTTOQAA==",
-  },
-  "/images/projects/brick-walnut-residence/18-garden-path.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYgC06d0Y9Z75syjGZSEPS6UcdbSAAP7TN79YqP8uUXcjviBdDuHGeU3cr4S7uEnMNMZHKTY4KApQ9fivPLRQGJTxPq78FNe4WjoauszAZIHsCoYoa6KW4RFzNMmKkULDvI/dK6crZof1ben37gwXikgjkXRY+KW3i1YCAfWzmne2UyjCOt89YfhI7l+IAAA=",
-  },
-  "/images/projects/brick-walnut-residence/after-elevation.jpg": {
-    width: 2000,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoOAA4AA4BaJZQAAudIeRvLoAD+aI7VIx1f0dJ7lWmhGCSG/w61LA8HmZihW+1fxmRmH4o9mjJWMR04R2KhfbLNzi7X1rCuWU+W1NyrwNQCSkFYAAA=",
-  },
-  "/images/projects/brick-walnut-residence/after-powder-room.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JQBYdgw4jVEkBupOsx4AA/VOXNG7qqpdz+mN5ZW+6Kmxoa3Xum3CJhSKfjzDyx1mvnEzzyMfEbMffigmy3yqX6rGlbqUb5NLOCXfvbebF42JsRN8aQvDbdgCAZB+cAAA=",
-  },
-  "/images/projects/brick-walnut-residence/after-shower.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JYwCdMoADDWB52ndjZkMAAP7SRqsPYTOhl139cKv2r6fhZrUeQuj8ZNDnUa0SIiEok0aF0deIJFGtbhuXqvcuhN7kjDjnTrfFL1oAAAA=",
-  },
-  "/images/projects/brick-walnut-residence/before-elevation.jpg": {
-    width: 2000,
-    height: 1125,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoOAAgAA4BaJQBOgBl3Z1L2wgAA/ufamD+7QlRq8Gsl0myR5cohkjJ1QIHo/1Gy8PTwwcewYW6GX907Z7RXZSDtOaCmy/AJZwgXtieeWNxAAA==",
-  },
-  "/images/projects/brick-walnut-residence/before-facade.jpg": {
-    width: 2000,
-    height: 1340,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoOAAkAA4BaJQBOgMWq7UyVYAAA4nhuoEmn/yU5QP1tZG4gkjsH5h5guPJsVtQgbmhqbIl+rcOzfCbLacSrSCsgLR8V4AjRAziVR9lwcDNL4EAA",
-  },
-  "/images/projects/brick-walnut-residence/before-powder-room.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAwCdASoOABkAPu1iqk4ppaQiMAgBMB2JYgC/OAl8XWJnQAD+xRwjlYqXGtqEg0Js2thmOc6Em2bhvo9ZW5iu3rB8zktM/kcbd4fRChCZnkbjUZI162tFfEKv3t7dbR2PQZnMFnThkQGgsCGQAA==",
-  },
-  "/images/projects/brick-walnut-residence/before-shower.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYwCxC8ACKP35tK9vjyHPGkAA9q8FSg7g6ZfaTwRWzfxJRn4erPFdhCH9MqM0BxOaaHbkups8Pptzyu/+loA3gSlemTQTdZC5vXpcnH7fZvZGt67U6hDkwrxGZ1CEZ6qGqS1D4AA=",
-  },
-  "/images/projects/cement-timber-villa/01-passage.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JYwC2yCBRq6UEzvPBIADwVkAA97gKKiGVQ4wDgGsXMkgO32xnFWfGzMBT/hl2BqhaNt6Jw4FqkR2Sjnhn6iHjh1BnVKR5KwaOJrq0bfYYYId3ZTzCw/yKgAA=",
-  },
-  "/images/projects/cement-timber-villa/02-double-height-wall.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoOABMAPu1iqU2ppaQiMAgBMB2JYgDCgCPaQdIO5XFkDjnFMcAA/d+6+jyTNpiVM60ycJq75Qjdpj90Ob1CGnigKw/7EYmrqRBaWJslJnRyMgsH6JB1weLXTTnymQIVF9Vzeo75uXHooJHYdVrftKD2SUAAAA==",
-  },
-  "/images/projects/cement-timber-villa/03-exterior.jpg": {
-    width: 2000,
-    height: 1500,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoOAAoAA4BaJYgCdAD1P0p4AAD+sj74cSP1Tq1pG2g5GKdlj34jbSNi1rqJYtS/avVz/F0l++7uZwowf7qCBaK1ZqPTWQ6cCNjwLX6LImSV4AAA",
-  },
-  "/images/projects/cement-timber-villa/04-vestibule.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZQDG9BX97HnBE4GL+P+qAAD+X//XDXK8Fq/OkAbumpPaclVCUXxORo3mcC1EF6BlNYjLrjECVUAajWIQMYHM/GPZ/IJavErhv/405k8xHTpFpnPkLAn7H5aOy2/JFJXAAA==",
-  },
-  "/images/projects/cement-timber-villa/05-bathroom.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYgCdEf/t0ADMc+OM074KiHgAAO+k2KlBurWkRiQ9bfD0CChRjM3MkM7sGfSkFTHIxbTlU9oiAJ5IZJOSgERnWMJ7y5k7JOkulxuyDYS4vlLj+l6UeSwZFWILoReHq9FiRZuwY8axBOe8jnvk7pBiHWU9YCy5xClDDdV/VcTSrmwVO0yvPn90fQAAAA==",
-  },
-  "/images/projects/cement-timber-villa/06-wardrobe.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAQBACdASoOABkAPu1iqU2ppaQiMAgBMB2JbACsABmSRANrnNCojWc7gAD+xNLoRaxizdESVPM+8IOgEyABaixyh5PEu9j9h25K9pKQAGkB6m20kS/1vfhmoHj66vQVhOULSBEqt1En6+KQ0qnf0WgybuSWjsGpZ25sSj00QKqm68nrurZZEPCAqi7Ss8RDycuzt/gvXx6kSwAA",
-  },
-  "/images/projects/cement-timber-villa/07-passage-plants.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZACsABK5kw9Dg4pKbHKMxL0AAP6aklbWEB+UdzFImyCqAnnnmM2dDzvFSulvl/IK+i8o5232Kl7MXdtrrCl1lbG5Kcn4O4waEbKHhvhDKoUeakm8ui9jpSXJtpaMvpr3xe0hGDn32Di/jwr1QPiFnB0lL2vDy9oZjSxStfR8RpExlcL4AAAA",
-  },
-  "/images/projects/cement-timber-villa/08-veranda-lawn.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADQAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JQBbZA4ZGlNXJQ0A6soAA4d9KZg74DThkPtEsEMDA5Vps3H9v5i5swt8GWIcVvsGlJnfmKk8LHGW4kb1MtgXObwSmIV8huIw6AJtVFbkEk51oZpB8Js4XztC+ZhZZGv+cqdQVhsevrzgG+8uTSbkUFwLgAA==",
-  },
-  "/images/projects/skylit-courtyard-villa/01-courtyard-swing.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZQCsB3gAo0FzBAbRrexUMz4Azh7/2BKqoe2HyAG01B/t5fO6W5YET83KNjHdbduJCwMkzYqjrdSio1r49NF36WVBFEbo9HdZynX8ypQMAA==",
-  },
-  "/images/projects/skylit-courtyard-villa/02-courtyard-seating.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZQCdACHmZLNVMU/c4B+JAADhbL0HszOLoiA4YDm3lAshgePfmRHlY9s7/SLyZm5bPnmy0Yd7iz13EKaKhjFwVOU5tI3nCVpPidgJivShaQC+9+p+UPAYezHiIkAoog9enEeL+AA=",
-  },
-  "/images/projects/skylit-courtyard-villa/03-dining.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoOABMAPu1iqU2ppaQiMAgBMB2JQBOgBEPTzXa+3COUKjAA/tZw9cleAazk+chl9bflkVw3AFi/61Nfmg4/A9QqOdLxHu6NmZ3zIKHTRiDOmqQ+4OiufnskBFmFC7/GVONnvekCWmotLgAA",
-  },
-  "/images/projects/skylit-courtyard-villa/04-kitchen-island.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYgCdMoACtYrjd0OsZmU+hDAAAP4Ksy/rQtXuWst/s9KTPybpyp/GZkX1chnUauTRQM0FT1hQn9c9uexgb1tSm8BWAuZq992fJmhVYwDXIYWKnkhdET9ZPS1LlCLaPw41OA7pz9uaZGf23tZfIw7TMz09wAEJn5m++N0LCZRSSV266AA=",
-  },
-  "/images/projects/skylit-courtyard-villa/05-living-tv-wall.jpg": {
-    width: 1811,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoOAA8AA4BaJZACdAD0kQq8eWtAAPZg/2WwGPG+1aDhhbSbRNmfSru/kL3o+9mPIRzdx5JVrDi9tzrF8Yjn2U3gnM1TwpKNN45JLGaLKFGgXTMHexfAlvb6bGz3UAcScZcAAA==",
-  },
-  "/images/projects/skylit-courtyard-villa/06-bedroom-partition.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JQAAK/0baU25EyHqouAD81aA0uhkTFZGWhjJj/ViWax/+LLnZUNc+slf3iEV+ML16ayfDIf3fZCvXykLDyyUNwyiNazLCwH9jeJJezJloHkcj03+hafgA",
-  },
-  "/images/projects/skylit-courtyard-villa/07-wash-counter.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOmUAUZEXglQ+OG9eF/LjGuywAA8B/3h+h8vs0s5bFr+lGm1wX1pq51PlH6BtdsIN/dP4WlNG09eucTzyM/vS5Aa2xR+ppZw0gjSDST/YbrS6DXx+y1++PQ90a7hjmRVz5ncyalwqTvV+S6gNAKAfexdjMDNsAXwq6C/HZAAA==",
-  },
-  "/images/projects/skylit-courtyard-villa/08-curio-shelf.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JQBOmUCrAAK+SeWC3f76jQeRRbgAA/tedX/ordbOZmk4h146oe/PNtdep3pEqdzV0tv5zO7pk5ctDEF3qEVGVgnkovlH+QG/snY3VVJUFTzC4SMatYoVfJhF2idUe5JWtrB4C+XwAAA==",
-  },
-  "/images/projects/skylit-courtyard-villa/09-crockery-cabinet.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JQBOgBFkAArF8zB0pY+magAD9UafxcNZ6EIc51Kavo57CapBjrrji+FpAoaYXQaAc5tirbf1tmyPyjoHzlUr0E4emn1IBIOJrLgHzGXL31RSbLQBVtIGud4wAErQAAAA=",
-  },
-  "/images/projects/skylit-courtyard-villa/10-bathroom-vanity.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoOABMAPu1iqU2ppaQiMAgBMB2JZQCdAA9Mb9ZXg3TjgAD91elTHcJDruJZG+fl1qnp+UH1hh1tCmpOi/PFOPNR44dHQ7lOFvuQwTU5VEpeNSKF19HOFNkd+nIkRavCwmjrZSYWlQAAAA==",
-  },
-  "/images/projects/teak-stone-villa/01-master-bedroom.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JQBOgAycySdGgq7L7RK6gAPqQw7/ge1SAzc2zDJ170hczaxZ48WimQaYPHSasdFHKhQdc2Axwq3dY5P2CtIjrfOzNkMSboeaqloM2XTmkxI9MO1jy77CRkhzoeJySJQAAAA==",
-  },
-  "/images/projects/teak-stone-villa/02-formal-living.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZgBTAAY8wCHTvNI13ITigAD+sgqC055Gu0r3hn+eKI/M3JSuVp64cvrXd3yuNk/xQ0hhi74B7jrleuLLbGXh7zJD9ELXsclXVmctfqAqlKmUXjpzk8fYvd6ozK4gFmH7ntprBUoS+tsdtezsCn5OL0yK/dssNrEpuSl+F0MFKfariaUAAA==",
-  },
-  "/images/projects/teak-stone-villa/03-dining.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JQBOkGgwYQxQMjHwwj1Gwdd5RAADb+iu6V0di5q2cwV6TWZqXsyY3GxynAOZd41CSu94qDujpohMJtc3qFTPISmUuLr8/3CEHzrJsdNL7+e9AiTSpbBhE92DHQaTNv+cZo3nvd4IS0l5TdCPOCaP9VdMJpQAA",
-  },
-  "/images/projects/teak-stone-villa/04-home-theatre.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZACxGwAB3kjh8+oq3xxe2negAMkAzIhOD6vZkiex/mBX9d1e/3GEjD6tTJtDkE4vz5+Z0QGG1iH0wAA+DSF1rjhZQWr1NDcBsKpUKwjLi9XOE3ztxKIhcn93Hr3K/wTr+DFoVXwK7TDboWom5oWBy0ycrlqCqvMAAA==",
-  },
-  "/images/projects/teak-stone-villa/05-wardrobes.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JYwCsACB0qH9sSGPZeeOY5cAAw1yennjG6UTcZabyxP3B4q9g4Ui+R1Q1z6Gng8SoIibHqKdUwqOnNll7xJbC9q/LCysDnvYH/AeZAHwMdIhLRaVhc/9uljZC+ECnD5KmEQAA",
-  },
-  "/images/projects/teak-stone-villa/06-bathroom-vanity.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JbACdMoR3ACf0BGstitR/7oeXAAD+P6HNqbYx0xhaMPw95JifMZpc2YsC5FSLuzYnAPXqreWMA8dzI3t0dtHUALs+X1TDqGww6bzKDSZO0lu5l/PTi3g3L4TJHMzfNkAM1LpZfA+kl0MBQAA=",
-  },
-  "/images/projects/teak-stone-villa/07-divider.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JaACdMoMYADwGlJWhE6oVPe4kAAD5cunM0oo9aFMQLXtPMVq/vSj7esqAMa0Tj0UPZpCuPxdxs4wdy447GNfgHf4/PiUQ+uZUEucwt3jppINgN7blP+nknIZj7Nu8vw+rtW7aXU8DcnalAAAAAA==",
-  },
-  "/images/projects/teak-stone-villa/08-passage-art-wall.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAACwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JbACsMoRwN6SASZO0Xg8td5npoaaAAP7sTNGRabv7CV8FEvberxTBoHsQuZvdPQEVWUpMCKJNX4BNJ6keCp3bfqvdopTraGwlxoXwI9HFFoyZv1apOu8r7wh9V030sF4JQmlMJEhW0ob6BKPP6Xk2eB3vm8T0GdCBpfTyTc7F8AAA",
-  },
-  "/images/projects/teak-stone-villa/09-living-divider.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JZACw7CPQXonoi2ki5PkAAOGda1gvmxG3gp10+Ay994yPlnVK5Uev/EpknHTcwfmZdUEc4ztTJ8lSHpOrwj+bl3TmjcWPvFh0j5b1ixM+TcsxS3scP8+0aU0/KeozuoCwNVVcaDaXSjQAAAA=",
-  },
-  "/images/projects/teak-stone-villa/10-stair-hall.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAACwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JQBYdgyEXNDcr9AcTgADyHwUJvYdLUoLukZTpzds9DIO8gsuqulzYGVZWiYp0xCvqVjvCwQwYR1ZDZT6NcF8NkOJJS9L8+F2UUzEXZ70pdH/cjHFpVOEILeoirgmW4x9aT2UgAAA=",
-  },
-  "/images/projects/teak-stone-villa/11-family-lounge.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JYwCdABcUHvUYj9Mo2OAAzgJ9A1vXQM5KvjNk7cB/khJVBERZNS+XU7ZojJWlE+rUeU7uSLSg0cTr35WfgMjcmat3Gb+X7T9CRoqgMy1MJGrFgAA=",
-  },
-  "/images/projects/teak-stone-villa/12-coffee-table.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JQBYhkRhcCB/WyB0mb4VBHwAA+DPubW8oztjbX+GZdxHvl/+AfS+g8UMvzhYIr9OsVelib5Z3G9Xp1a6078nP3Y4xOx4RoMfJ7RWHh3LmpVmXB7Y+0jZmykMX+Ym3AbQdt2owZ2AAAA==",
-  },
-  "/images/projects/terracotta-jali-villa/01-dining-wide.jpg": {
-    width: 2000,
-    height: 1127,
-    blurDataURL:
-      "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoOAAgAA4BaJZQCdACh2sHpAAD98GWS7mdO1Cq2BvT1bMnLr/2679QPG+SHHzKI0eieE4dE+2mR6FykAAA=",
-  },
-  "/images/projects/terracotta-jali-villa/02-upper-landing.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACwBACdASoOABkAPu1iqk2ppaQiMAgBMB2JYgCdMoADZgzgsf1rEED1yEdoQZIAAPzhWtYWldVPosypGr+OwC+AJgDiGzItPvMEhFiZYa/hXks4Fsky/mfcP1OrrZaL1rf+DKWHz6p1nu8OprG7HIOxDS8fzshDeY7eNKBNz1cEK9zeWyNZw+z1pjmHcAAA",
-  },
-  "/images/projects/terracotta-jali-villa/03-exterior.jpg": {
-    width: 2000,
-    height: 1125,
-    blurDataURL:
-      "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoOAAgAA4BaJYwCdAYtpq1LL7JgAPlwhO4yJHPMTuRl0gyTSbHwVneS+sOacInVY3LswKUPwMKvXUqeJVHB017QbLZH15gSwAA=",
-  },
-  "/images/projects/terracotta-jali-villa/04-kitchen-counter.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOgA2lXgrJpDtTS3HsAAP5aEXwGpD9USn79qMsfCSRN2ruj7hydjMJC8RvO5m+m60gknixE3+gMw+ULJApcIcy0ODh6sisZswQv6jjH8tjiwaabkuPkpxrs8uNTt7A5zvp3/gOVp7p4NRChREutBP8vvX42lWzg6y7tC49vXv8AAAA=",
-  },
-  "/images/projects/terracotta-jali-villa/05-staircase-jali.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQAwCdASoOABkAPu1iqU2ppaQiMAgBMB2JZQCdAB9mLAmCuNP494AA/d+h0ihpM+HrZtvH3ZwtxkmiS+SrE7sspjYqSc+Ei+B3yZKZe+KWQHl3np1oPXlZfu0SEyR+yApzv92BWFRZnXi8OC/YIV/ZbqEl16p/reRGp+7LCI0N6hAHEdXY87wAAAA=",
-  },
-  "/images/projects/terracotta-jali-villa/06-bedroom-balcony.jpg": {
-    width: 2000,
-    height: 1127,
-    blurDataURL:
-      "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoOAAgAA4BaJZQCdADRGskZcAAA/GdyU00TMA9Sex/LdwPYSY4orw0cVzqY9tWb2Yg6xXtDDwEbL1yI64FRjWw9JaAAAA==",
-  },
-  "/images/projects/terracotta-jali-villa/07-wash-niche.jpg": {
-    width: 1344,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACwAwCdASoOABUAPu1iqU2ppaQiMAgBMB2JQBWAAob2A8gQPIgQAAD8Wmuw8AE22/q3ie//+hONHVTckS9BdNF2icfUQ/8S1eYEAlPkyEauqh+Fw0RrSIwNgAXcKk2cUt2SVXqYE9ubcts1ffioKwQUAAA=",
-  },
-  "/images/projects/terracotta-jali-villa/08-living-tv-wall.jpg": {
-    width: 1539,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwAwCdASoOABIAPu1iqU2ppaOiMAgBMB2JQBOgA4iwA7EdRtLlsAD8XIojTc3bPHpymHdRvqzETE2fNhb5KX9LB/Yzc8e2IGA8tIdTxMk0p7xbjPH0cQt1GGiVLJASKNPxqWrjw9yGrzrpbM9Jj8LkpCDZX+gA",
-  },
-  "/images/projects/terracotta-jali-villa/09-jali-stair-top.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOgA1R6AH2JjQzgAPxbjPVTzYdsMyPYTgDBeSGEnOZ9698XuTQmaXKHiDbPhVbWYXp01c1iYPqjfheB8essuevyitPhkJ1uDAEFcNofLBcTvT1UOrCAAAA=",
-  },
-  "/images/projects/terracotta-jali-villa/10-courtyard-slate.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZQDHE8AqQPdiPjO/pgIUjwWDYAAA94OeWp0I0O9ELDuT5hFfv0Zvr7i06bkxCGQqtuiSu73w4XGE2K+26fNRnt2tzXNTdsuRQa94Lc7r9qeFktJtabhwVmlLkwAMaggd8KNV4lwNjzccrCFVe396XYSUth1HH8rwt1K4F6wG4Fd3gAA=",
-  },
-  "/images/projects/terracotta-jali-villa/11-dining-table.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoOABkAPu1kqk4ppaQiMAgBMB2JYgCdAB6GGh5M7uuKjR1284AA/pGJmBiP5ccZFzVwbvmUV4oQOPqI55zNhzwxZZ5Y3W8RveaTocXJHllHvCTawCey7I1zDUliMjwj0hRB/ZfkT7PVIvKAsgX14t/NlpHduEqAZn1PD0y9YAA=",
-  },
-  "/images/projects/terracotta-jali-villa/12-bedroom-grey.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JZQDCgB2h6q7jKwhptRkgAP6RKHlkJRw/HrLMDQXvOIO56H9Aai0TCoEI63BShZu+co6U+XS22NbIkbp8iKkvTv5Urfx5Axv+4U18EbX/Nap0ezAAAA==",
-  },
-  "/images/projects/terracotta-jali-villa/13-kitchen-sink.jpg": {
-    width: 2000,
-    height: 1127,
-    blurDataURL:
-      "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoOAAgAA4BaJQBOkBsjGXfL/3l4YAD9uXqpQGB9f3qL/NP1j3iyA5uVlryo5MJOiiCnrJZ1Cmgkhqn0RHLuW5CSIi9MApx90N7veIYAAAA=",
-  },
-  "/images/projects/walnut-apartment/01-kitchen-wide.jpg": {
-    width: 2000,
-    height: 1127,
-    blurDataURL:
-      "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoOAAgAA4BaJYwCdADcJQtlvmAA/b+YrMTK7FdCbJnZwLc2mQ8x32kY6vcwnL5r5kA2PeS9L/lFilpVuSoQVH8JLURocAAA",
-  },
-  "/images/projects/walnut-apartment/02-foyer.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JQBYdg3FqudNASwTW3sBqgADyX4YhWDI18S/C6HnLT97/m4dzZfwA36ExzV6uSveqYBoFaZLlVj3y+ZbZzkxX7wBMejjaJuy9g8e2uF6blyVtui8BRfpWnTMM3pu8Q85a8NL4fEcfN7vGAAA=",
-  },
-  "/images/projects/walnut-apartment/03-dining-crockery.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYwCdBHaQkHsvrlE8tbfOjCEAAPzZKslWGmU3dn7At6dCkSxv487HwWJ59wEhdN8TqYWQaIOL9ptMwOcjGYeBFicx7gbKGRBJjXCbMciJ47S2/K8Xp8ZaiycVeCFF6H3NAfNDM9FDEUfYkAA=",
-  },
-  "/images/projects/walnut-apartment/04-kitchen-sink-run.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZQAATvyjIJoNy13z6tXFQAD+iTZnAXFAynMYexL3dg+GUgVwge+X1E+f1uzJYp6C7KsTL4jbPfrhY4YHmM5xm6A5xpw0o9CxjobbyFO1KXQ4bMgxSp+1dXDabYAA",
-  },
-  "/images/projects/walnut-apartment/05-passage-ceiling.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOgBChJwnFgrHoffmcAAPykx4pwT0FxXHcVRBKrqEgW14z89BZVOxdPwMTN1FC7xwz9jCWCcCaTJVEorm0CE3BLG8hiBFD3OgwbdmYCCRRwDKELOrkyRVpYAA==",
-  },
-  "/images/projects/walnut-apartment/06-wash-counter.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYgCdMoAluBb/yFOqub61ufNBtnAA/luDF6qHFKh2teM2qHor+lJ1V2VLK5BdTLxPeHnvmJqkJjbI1eB1vAqEV7wIxfQENEz+QxgBuXbwm7fJnnPrRymBZLhUfumnlezGRUER7s8GmuMo0ouooviqgFek8HhoG6aspr85kAYu3/IAAAA=",
-  },
-  "/images/projects/walnut-apartment/07-green-shower.jpg": {
-    width: 1500,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoOABMAPu1iqk2ppaQiMAgBMB2JYwC3vHAAy3iLudeUN0gYfgAA908m256I+b2zayU2USSqG1Gr8itcUqozxPZDVGAa82eRie94vEHOHHzFqhFNKIF+8LZvWVJYeSUMcncnG3PAyaN54gAA",
-  },
-  "/images/projects/walnut-apartment/08-pooja-cabinet.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQBACdASoOABkAPu1iqU2ppaQiMAgBMB2JYgCdMoRwAB8TwGKsVA8/IeCAAP7gq2tH8NBJGUtzbC7RcN23q68Bwvl04EKM9uMB49IlYvEXk4uZjDtzZTqSwFWCoQR5ufT3KQAA",
-  },
-  "/images/projects/walnut-apartment/09-kitchen-corner.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZQCsAB9E8qckddiTXk4b+8AA/K8z+EpoZZ6xNuoVdiv1802N3Yhu1G/1aKkWGDOR7Ge3+NJrt9Y+jzV0HHMQmqxvAcgu7FRZLXQcyejLZWEZ1LkNEU4lfpXtE1n2TU4kMAAA",
-  },
-  "/images/projects/walnut-apartment/10-bathroom-grey.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAQBACdASoOABkAPu1kqU2ppaQiMAgBMB2JZACdMoADKjCaqgKZ9EDjyAD81MU2WNiklNeYeVkP6bKLeuASSK4DKZCjIjV49Skb6KvNu+5cBFpzURbgwM6BfVjRpHggUPHD1YMsxGlTPEKzs6GKF0NgxW1QEkhbMVX0HD7UW9TBdNTZR3tmGetJKD96485DWEdLcFBt2wY6AA==",
-  },
-  "/images/projects/walnut-apartment/11-bathroom-teal.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZgCdAGOoNbk2zTnDoNpsXQAA/ScKM3JUTAMZA3q7HJ6WsiLFJdYu8wf/01mW+3QNxZOKAoFAbh/qQ+7JeUOAynIZF+vtIoJZ0YE9Hb9BpzV0DU1ZnBCQcZt7eE+EIYHimpxkkBl6lgAA",
-  },
-  "/images/projects/walnut-apartment/after-wash-counter.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JaACdACBX0p6AbtMQf8n+MAAA/kSgUSJEm6a9Bq4rCdEM8AG9uFap2Ps/85hmdG99RmkAWf5OyPCSmghg0ooHjD0sG2F3Oezvj399yoa7mfKPjSO19vFARS20CjPcHgKYyYlv74ZBBdISJ/HvIU53l0xGYzXT3E2KZh6xPwAAAA==",
-  },
-  "/images/projects/walnut-apartment/before-foyer.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwAwCdASoOABkAPu1iqk2ppaQiMAgBMB2JZQAAW79MvqVOke1qos4gAP7o3QIg2EDTUCbVn/iwNDXfaeJMn/b2DL6TfpRm3qsXMoSeO1F/1DZLbWmIl6V9/Fem0FOMOOhyIdcR7hmkaZ6C5koh3RiPtuBzMZTAAAA=",
-  },
-  "/images/projects/walnut-apartment/before-kitchen-sink.jpg": {
-    width: 1125,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAACQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOmUABqje6/fSJV6qI8nsfssIAA/okMjKgb/7jaZm5flrk7cXBNPljbrqiucAif6ox5FZUcAULB6K3KAxWE6/UN399Ib9Yjj1yHcKXPqBxMWs8DM9v29io3Au5tjPWHkWx6XsZTdgAA",
-  },
-  "/images/projects/walnut-apartment/before-kitchen.jpg": {
-    width: 2000,
-    height: 1127,
-    blurDataURL:
-      "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoOAAgAA4BaJYgCdADcTYP180AA/kgJfbtUMv5ky8DHcoReYaYSKo8Oot7FoY1Z+VvqRreiWbpN5hPYaLRdb3zMV9i5M1RgAAA=",
-  },
-  "/images/projects/walnut-apartment/before-wash-counter.jpg": {
-    width: 1127,
-    height: 2000,
-    blurDataURL:
-      "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOgBArjVjG9iHv7Qm030ADLvjU9YBVSfkL/c/+g2hb+byxBJW24OOjF5GvxNabv0j9XgoSBw6dqSVhneWGjLgrhX5IsDYLixsawczmcV5j27IS0VRvD6eU162F4wkX/jBw1R588MooA",
-  },
+  "/images/projects/brick-walnut-residence/01-entrance.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoOAA4AA4BaJYwCdADiPPiaIAD+ms769UWXOXNFGUbganTDufUjhVWDxp5h5C1mdiQNzo2ObJOi60tyNac9jv3TTPacEXysqOMkQPAA" },
+  "/images/projects/brick-walnut-residence/02-kitchen-island-wide.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoOAA4AA4BaJQBOgMW0jtPxAAD+xGGhuDR8wrsfINfK78Z5kUoM+doM0BVTukZ4kw28Osx0fGmGhbOyF9dk1gznq5X90FesmwLQ/dwhYJJraySmXQYAAA==" },
+  "/images/projects/brick-walnut-residence/03-dining.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoOAA4AA4BaJYwCdAEQL+3XQwAA8Ucf3/VpGYWbNLEj0vK6JFfflGqB/ts5s+QVwVy9QXEj2DDxwZEEA0f3+J5Pnqcuh2pY20WCKa+QAAA=" },
+  "/images/projects/brick-walnut-residence/04-facade-twilight.jpg": { width: 2000, height: 1274, blurDataURL:
+    "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoOAAkAA4BaJZACdAEe2G3n0u+gAMtDd1+9yTchXfAmFZQxq4LVwEeMgnjg975aC+o7aPN3WJftB08SilKAiVvf9seUvrsKXRZ4GKSPlSxTX4vRi1m0HAnb8jkouq1SAAA=" },
+  "/images/projects/brick-walnut-residence/05-side-garden.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZACdAB0/lPTs/Jm3OTpsdmAA/u1MW2LdwSydJa5vX+GsFYLUJ20+NNSnf/BOsQouNhF2AGNvsw/EjW01RwRv4odAvbdYKBloi63JMAiK5ZMbwzAhi0yJaD/DtMVlXf1gk9XY/bCOO0uOFy1OuL08xUYvSx4x3x2IBmUF9npvLh6ZsbdZELSAAAA=" },
+  "/images/projects/brick-walnut-residence/06-dining-kitchen.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoOAA4AA4BaJYwCdAYtfzFcGx4AAPfL26BvZF76XLcTZrfEUmmPyQ6o+WEo9hzB35w0oRKtnJmSTjnp1e2WPpQ67+MNPol98gpkX1bds0bWfPLUjathESkAAAA=" },
+  "/images/projects/brick-walnut-residence/07-island-detail.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoOAA4AA4BaJZgCdAD1RbqzRj8AAP6jaWkjGAwP8ADhkHsTEqUiq/W8TKmMlOu4t5m70NGch8CQKEvliqldRfUd90MIMJeFkFIDVfhFmUB2I+8OEH4pwlgcCs+5O7Yu2YAAAA==" },
+  "/images/projects/brick-walnut-residence/08-bedroom.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAQCdASoOAA4AA4BaJZACdABhFMKtgAD+h3vmyUypOjczwA+TtlJc1Nt02vUeTn4tTI9Pf8tEJfs/3oFn5StiyzezRadw8qlU6ZNUn+UaPkbhsEjjI413r8a6U4h0RLeZwvJWgAA=" },
+  "/images/projects/brick-walnut-residence/09-staircase.jpg": { width: 902, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADQAwCdASoOAB8APu1iqU2ppaOiMAgBMB2JZQABHxuVHlOWhru6DMAA/vjAJLBk7L2ZBmOP7GPXfIY9t6KMHGTfm7PrwOTomq87FLtBpEj0VCuSZMqVLTMqGnoz/17K9Inf6lr7DN5vq/QGnjgnmL1TwQecZquAhFa4hFSFfO3zDzn3+rO9Sr2YzjgjL9h1zi4AAA==" },
+  "/images/projects/brick-walnut-residence/10-bathtub.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoOAA4AA4BaJYgCdAED+jT9OEAAAP7mAU9CdaJp1Ds39l4q2kYhD1sNudZO/9uir+IRVpNKMsyzLpHz2mdpWbCDnrtVmsexuNfycBdIlXv9/r+PXho+N2bpJ84zkAAA" },
+  "/images/projects/brick-walnut-residence/11-study-wardrobe.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwAgCdASoOAA4AA4BaJZgCdAYvDwJTTqARExmAAP39PoHrkupDjoWnRBv7uF6+v+/84soLf9YhogfFJ2my0A3Ide7it/Vkpu60Oi7hFRmS6/XeiCpnqt+jlevRrg3LFPjUlXWhCvVaFTL3S7S7l2mdROF7Q6rAAAA=" },
+  "/images/projects/brick-walnut-residence/12-front-door.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoOAA4AA4BaJQBOgCPP1VXnC6AA+OR/ibNeD05PBzHJnPI1V/eoZJHV33+2OpPXi0QHXte6AcwTAXciUUiHuIkcsuKj8MTDOIA3smV2gfImKFVxmoOtUAAA" },
+  "/images/projects/brick-walnut-residence/13-porch-plant.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYwCdACFrCPPzP62wDJ6XwwAA3OzfV4oMSjYsytVnhqvpN82bo1KesQbekKFwfpLhVDuJKPtscUBVmgvgoeJHH+zVFGyT7K9nDnXSL0wPaj4IfeXCBWsechw5lqL0jIrWU/d4ZUPGeP+wt8380s0ouBmD/4wAAAA=" },
+  "/images/projects/brick-walnut-residence/14-balcony.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAgCdASoOAA4AA4BaJQBOj+ADGSWeiY2n64uoAP7d3Su2Hpmq6u/KvqmAMvy67ILBsXsDzxz+JZCFeXYMYxqgeFfINcUxKCXAXyjnBttkGAEdl5OMzps3PpgAAA==" },
+  "/images/projects/brick-walnut-residence/15-louvre-screen.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JZQC/OB6H28PxcNfv+NXAAPnuWWkNd8Im730TNfMrEYBPRnVMIxlBqp9PXMnDTEK52guAutcU01IFIwTciePuzeyfI+dmmGnav5R4SewAAA==" },
+  "/images/projects/brick-walnut-residence/16-double-vanity.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAQCdASoOAA4AA4BaJZgCdADOjRn4NsAA/nNEItGEtFW8acajgov0/9Szmi4tR+GolMWcPqdt0LW5VmKtgmI4FvSSVRIqMtH6OyXfZwTTgQ9QGfagYY+9BopY3WRNlnImuCQitrYm8sU9cgz5QAAA" },
+  "/images/projects/brick-walnut-residence/17-bedroom-blinds.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAQCdASoOAA4AA4BaJQBOgBopa51qIAD0bbwAXroO0bpNiQhKzm90nyychp/cEA2TuXSvBCRafHJizyekuQ19jFFx+kf7kIAuSeiT1yR7DeOY4pDq2VXYilq4WWWotTpLoZ7wTTOQAA==" },
+  "/images/projects/brick-walnut-residence/18-garden-path.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYgC06d0Y9Z75syjGZSEPS6UcdbSAAP7TN79YqP8uUXcjviBdDuHGeU3cr4S7uEnMNMZHKTY4KApQ9fivPLRQGJTxPq78FNe4WjoauszAZIHsCoYoa6KW4RFzNMmKkULDvI/dK6crZof1ben37gwXikgjkXRY+KW3i1YCAfWzmne2UyjCOt89YfhI7l+IAAA=" },
+  "/images/projects/brick-walnut-residence/after-elevation.jpg": { width: 2000, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoOAA4AA4BaJZQAAudIeRvLoAD+aI7VIx1f0dJ7lWmhGCSG/w61LA8HmZihW+1fxmRmH4o9mjJWMR04R2KhfbLNzi7X1rCuWU+W1NyrwNQCSkFYAAA=" },
+  "/images/projects/brick-walnut-residence/after-powder-room.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JQBYdgw4jVEkBupOsx4AA/VOXNG7qqpdz+mN5ZW+6Kmxoa3Xum3CJhSKfjzDyx1mvnEzzyMfEbMffigmy3yqX6rGlbqUb5NLOCXfvbebF42JsRN8aQvDbdgCAZB+cAAA=" },
+  "/images/projects/brick-walnut-residence/after-shower.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JYwCdMoADDWB52ndjZkMAAP7SRqsPYTOhl139cKv2r6fhZrUeQuj8ZNDnUa0SIiEok0aF0deIJFGtbhuXqvcuhN7kjDjnTrfFL1oAAAA=" },
+  "/images/projects/brick-walnut-residence/before-elevation.jpg": { width: 2000, height: 1125, blurDataURL:
+    "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoOAAgAA4BaJQBOgBl3Z1L2wgAA/ufamD+7QlRq8Gsl0myR5cohkjJ1QIHo/1Gy8PTwwcewYW6GX907Z7RXZSDtOaCmy/AJZwgXtieeWNxAAA==" },
+  "/images/projects/brick-walnut-residence/before-facade.jpg": { width: 2000, height: 1340, blurDataURL:
+    "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoOAAkAA4BaJQBOgMWq7UyVYAAA4nhuoEmn/yU5QP1tZG4gkjsH5h5guPJsVtQgbmhqbIl+rcOzfCbLacSrSCsgLR8V4AjRAziVR9lwcDNL4EAA" },
+  "/images/projects/brick-walnut-residence/before-powder-room.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAwCdASoOABkAPu1iqk4ppaQiMAgBMB2JYgC/OAl8XWJnQAD+xRwjlYqXGtqEg0Js2thmOc6Em2bhvo9ZW5iu3rB8zktM/kcbd4fRChCZnkbjUZI162tFfEKv3t7dbR2PQZnMFnThkQGgsCGQAA==" },
+  "/images/projects/brick-walnut-residence/before-shower.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYwCxC8ACKP35tK9vjyHPGkAA9q8FSg7g6ZfaTwRWzfxJRn4erPFdhCH9MqM0BxOaaHbkups8Pptzyu/+loA3gSlemTQTdZC5vXpcnH7fZvZGt67U6hDkwrxGZ1CEZ6qGqS1D4AA=" },
+  "/images/projects/cement-timber-villa/01-passage.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JYwC2yCBRq6UEzvPBIADwVkAA97gKKiGVQ4wDgGsXMkgO32xnFWfGzMBT/hl2BqhaNt6Jw4FqkR2Sjnhn6iHjh1BnVKR5KwaOJrq0bfYYYId3ZTzCw/yKgAA=" },
+  "/images/projects/cement-timber-villa/02-double-height-wall.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoOABMAPu1iqU2ppaQiMAgBMB2JYgDCgCPaQdIO5XFkDjnFMcAA/d+6+jyTNpiVM60ycJq75Qjdpj90Ob1CGnigKw/7EYmrqRBaWJslJnRyMgsH6JB1weLXTTnymQIVF9Vzeo75uXHooJHYdVrftKD2SUAAAA==" },
+  "/images/projects/cement-timber-villa/03-exterior.jpg": { width: 2000, height: 1500, blurDataURL:
+    "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoOAAoAA4BaJYgCdAD1P0p4AAD+sj74cSP1Tq1pG2g5GKdlj34jbSNi1rqJYtS/avVz/F0l++7uZwowf7qCBaK1ZqPTWQ6cCNjwLX6LImSV4AAA" },
+  "/images/projects/cement-timber-villa/04-vestibule.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZQDG9BX97HnBE4GL+P+qAAD+X//XDXK8Fq/OkAbumpPaclVCUXxORo3mcC1EF6BlNYjLrjECVUAajWIQMYHM/GPZ/IJavErhv/405k8xHTpFpnPkLAn7H5aOy2/JFJXAAA==" },
+  "/images/projects/cement-timber-villa/05-bathroom.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYgCdEf/t0ADMc+OM074KiHgAAO+k2KlBurWkRiQ9bfD0CChRjM3MkM7sGfSkFTHIxbTlU9oiAJ5IZJOSgERnWMJ7y5k7JOkulxuyDYS4vlLj+l6UeSwZFWILoReHq9FiRZuwY8axBOe8jnvk7pBiHWU9YCy5xClDDdV/VcTSrmwVO0yvPn90fQAAAA==" },
+  "/images/projects/cement-timber-villa/06-wardrobe.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAQBACdASoOABkAPu1iqU2ppaQiMAgBMB2JbACsABmSRANrnNCojWc7gAD+xNLoRaxizdESVPM+8IOgEyABaixyh5PEu9j9h25K9pKQAGkB6m20kS/1vfhmoHj66vQVhOULSBEqt1En6+KQ0qnf0WgybuSWjsGpZ25sSj00QKqm68nrurZZEPCAqi7Ss8RDycuzt/gvXx6kSwAA" },
+  "/images/projects/cement-timber-villa/07-passage-plants.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZACsABK5kw9Dg4pKbHKMxL0AAP6aklbWEB+UdzFImyCqAnnnmM2dDzvFSulvl/IK+i8o5232Kl7MXdtrrCl1lbG5Kcn4O4waEbKHhvhDKoUeakm8ui9jpSXJtpaMvpr3xe0hGDn32Di/jwr1QPiFnB0lL2vDy9oZjSxStfR8RpExlcL4AAAA" },
+  "/images/projects/cement-timber-villa/08-veranda-lawn.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADQAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JQBbZA4ZGlNXJQ0A6soAA4d9KZg74DThkPtEsEMDA5Vps3H9v5i5swt8GWIcVvsGlJnfmKk8LHGW4kb1MtgXObwSmIV8huIw6AJtVFbkEk51oZpB8Js4XztC+ZhZZGv+cqdQVhsevrzgG+8uTSbkUFwLgAA==" },
+  "/images/projects/skylit-courtyard-villa/01-courtyard-swing.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZQCsB3gAo0FzBAbRrexUMz4Azh7/2BKqoe2HyAG01B/t5fO6W5YET83KNjHdbduJCwMkzYqjrdSio1r49NF36WVBFEbo9HdZynX8ypQMAA==" },
+  "/images/projects/skylit-courtyard-villa/02-courtyard-seating.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZQCdACHmZLNVMU/c4B+JAADhbL0HszOLoiA4YDm3lAshgePfmRHlY9s7/SLyZm5bPnmy0Yd7iz13EKaKhjFwVOU5tI3nCVpPidgJivShaQC+9+p+UPAYezHiIkAoog9enEeL+AA=" },
+  "/images/projects/skylit-courtyard-villa/03-dining.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoOABMAPu1iqU2ppaQiMAgBMB2JQBOgBEPTzXa+3COUKjAA/tZw9cleAazk+chl9bflkVw3AFi/61Nfmg4/A9QqOdLxHu6NmZ3zIKHTRiDOmqQ+4OiufnskBFmFC7/GVONnvekCWmotLgAA" },
+  "/images/projects/skylit-courtyard-villa/04-kitchen-island.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYgCdMoACtYrjd0OsZmU+hDAAAP4Ksy/rQtXuWst/s9KTPybpyp/GZkX1chnUauTRQM0FT1hQn9c9uexgb1tSm8BWAuZq992fJmhVYwDXIYWKnkhdET9ZPS1LlCLaPw41OA7pz9uaZGf23tZfIw7TMz09wAEJn5m++N0LCZRSSV266AA=" },
+  "/images/projects/skylit-courtyard-villa/05-living-tv-wall.jpg": { width: 1811, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoOAA8AA4BaJZACdAD0kQq8eWtAAPZg/2WwGPG+1aDhhbSbRNmfSru/kL3o+9mPIRzdx5JVrDi9tzrF8Yjn2U3gnM1TwpKNN45JLGaLKFGgXTMHexfAlvb6bGz3UAcScZcAAA==" },
+  "/images/projects/skylit-courtyard-villa/06-bedroom-partition.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JQAAK/0baU25EyHqouAD81aA0uhkTFZGWhjJj/ViWax/+LLnZUNc+slf3iEV+ML16ayfDIf3fZCvXykLDyyUNwyiNazLCwH9jeJJezJloHkcj03+hafgA" },
+  "/images/projects/skylit-courtyard-villa/07-wash-counter.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOmUAUZEXglQ+OG9eF/LjGuywAA8B/3h+h8vs0s5bFr+lGm1wX1pq51PlH6BtdsIN/dP4WlNG09eucTzyM/vS5Aa2xR+ppZw0gjSDST/YbrS6DXx+y1++PQ90a7hjmRVz5ncyalwqTvV+S6gNAKAfexdjMDNsAXwq6C/HZAAA==" },
+  "/images/projects/skylit-courtyard-villa/08-curio-shelf.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JQBOmUCrAAK+SeWC3f76jQeRRbgAA/tedX/ordbOZmk4h146oe/PNtdep3pEqdzV0tv5zO7pk5ctDEF3qEVGVgnkovlH+QG/snY3VVJUFTzC4SMatYoVfJhF2idUe5JWtrB4C+XwAAA==" },
+  "/images/projects/skylit-courtyard-villa/09-crockery-cabinet.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JQBOgBFkAArF8zB0pY+magAD9UafxcNZ6EIc51Kavo57CapBjrrji+FpAoaYXQaAc5tirbf1tmyPyjoHzlUr0E4emn1IBIOJrLgHzGXL31RSbLQBVtIGud4wAErQAAAA=" },
+  "/images/projects/skylit-courtyard-villa/10-bathroom-vanity.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoOABMAPu1iqU2ppaQiMAgBMB2JZQCdAA9Mb9ZXg3TjgAD91elTHcJDruJZG+fl1qnp+UH1hh1tCmpOi/PFOPNR44dHQ7lOFvuQwTU5VEpeNSKF19HOFNkd+nIkRavCwmjrZSYWlQAAAA==" },
+  "/images/projects/teak-stone-villa/01-master-bedroom.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JQBOgAycySdGgq7L7RK6gAPqQw7/ge1SAzc2zDJ170hczaxZ48WimQaYPHSasdFHKhQdc2Axwq3dY5P2CtIjrfOzNkMSboeaqloM2XTmkxI9MO1jy77CRkhzoeJySJQAAAA==" },
+  "/images/projects/teak-stone-villa/02-formal-living.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZgBTAAY8wCHTvNI13ITigAD+sgqC055Gu0r3hn+eKI/M3JSuVp64cvrXd3yuNk/xQ0hhi74B7jrleuLLbGXh7zJD9ELXsclXVmctfqAqlKmUXjpzk8fYvd6ozK4gFmH7ntprBUoS+tsdtezsCn5OL0yK/dssNrEpuSl+F0MFKfariaUAAA==" },
+  "/images/projects/teak-stone-villa/03-dining.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JQBOkGgwYQxQMjHwwj1Gwdd5RAADb+iu6V0di5q2cwV6TWZqXsyY3GxynAOZd41CSu94qDujpohMJtc3qFTPISmUuLr8/3CEHzrJsdNL7+e9AiTSpbBhE92DHQaTNv+cZo3nvd4IS0l5TdCPOCaP9VdMJpQAA" },
+  "/images/projects/teak-stone-villa/04-home-theatre.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABQBACdASoOABMAPu1iqU2ppaOiMAgBMB2JZACxGwAB3kjh8+oq3xxe2negAMkAzIhOD6vZkiex/mBX9d1e/3GEjD6tTJtDkE4vz5+Z0QGG1iH0wAA+DSF1rjhZQWr1NDcBsKpUKwjLi9XOE3ztxKIhcn93Hr3K/wTr+DFoVXwK7TDboWom5oWBy0ycrlqCqvMAAA==" },
+  "/images/projects/teak-stone-villa/05-wardrobes.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JYwCsACB0qH9sSGPZeeOY5cAAw1yennjG6UTcZabyxP3B4q9g4Ui+R1Q1z6Gng8SoIibHqKdUwqOnNll7xJbC9q/LCysDnvYH/AeZAHwMdIhLRaVhc/9uljZC+ECnD5KmEQAA" },
+  "/images/projects/teak-stone-villa/06-bathroom-vanity.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JbACdMoR3ACf0BGstitR/7oeXAAD+P6HNqbYx0xhaMPw95JifMZpc2YsC5FSLuzYnAPXqreWMA8dzI3t0dtHUALs+X1TDqGww6bzKDSZO0lu5l/PTi3g3L4TJHMzfNkAM1LpZfA+kl0MBQAA=" },
+  "/images/projects/teak-stone-villa/07-divider.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JaACdMoMYADwGlJWhE6oVPe4kAAD5cunM0oo9aFMQLXtPMVq/vSj7esqAMa0Tj0UPZpCuPxdxs4wdy447GNfgHf4/PiUQ+uZUEucwt3jppINgN7blP+nknIZj7Nu8vw+rtW7aXU8DcnalAAAAAA==" },
+  "/images/projects/teak-stone-villa/08-passage-art-wall.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAACwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JbACsMoRwN6SASZO0Xg8td5npoaaAAP7sTNGRabv7CV8FEvberxTBoHsQuZvdPQEVWUpMCKJNX4BNJ6keCp3bfqvdopTraGwlxoXwI9HFFoyZv1apOu8r7wh9V030sF4JQmlMJEhW0ob6BKPP6Xk2eB3vm8T0GdCBpfTyTc7F8AAA" },
+  "/images/projects/teak-stone-villa/09-living-divider.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JZACw7CPQXonoi2ki5PkAAOGda1gvmxG3gp10+Ay994yPlnVK5Uev/EpknHTcwfmZdUEc4ztTJ8lSHpOrwj+bl3TmjcWPvFh0j5b1ixM+TcsxS3scP8+0aU0/KeozuoCwNVVcaDaXSjQAAAA=" },
+  "/images/projects/teak-stone-villa/10-stair-hall.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAACwAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JQBYdgyEXNDcr9AcTgADyHwUJvYdLUoLukZTpzds9DIO8gsuqulzYGVZWiYp0xCvqVjvCwQwYR1ZDZT6NcF8NkOJJS9L8+F2UUzEXZ70pdH/cjHFpVOEILeoirgmW4x9aT2UgAAA=" },
+  "/images/projects/teak-stone-villa/11-family-lounge.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoOABMAPu1iqU2ppaOiMAgBMB2JYwCdABcUHvUYj9Mo2OAAzgJ9A1vXQM5KvjNk7cB/khJVBERZNS+XU7ZojJWlE+rUeU7uSLSg0cTr35WfgMjcmat3Gb+X7T9CRoqgMy1MJGrFgAA=" },
+  "/images/projects/teak-stone-villa/12-coffee-table.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoOABMAPu1iqU2ppaOiMAgBMB2JQBYhkRhcCB/WyB0mb4VBHwAA+DPubW8oztjbX+GZdxHvl/+AfS+g8UMvzhYIr9OsVelib5Z3G9Xp1a6078nP3Y4xOx4RoMfJ7RWHh3LmpVmXB7Y+0jZmykMX+Ym3AbQdt2owZ2AAAA==" },
+  "/images/projects/terracotta-jali-villa/01-dining-wide.jpg": { width: 2000, height: 1127, blurDataURL:
+    "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoOAAgAA4BaJZQCdACh2sHpAAD98GWS7mdO1Cq2BvT1bMnLr/2679QPG+SHHzKI0eieE4dE+2mR6FykAAA=" },
+  "/images/projects/terracotta-jali-villa/02-upper-landing.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACwBACdASoOABkAPu1iqk2ppaQiMAgBMB2JYgCdMoADZgzgsf1rEED1yEdoQZIAAPzhWtYWldVPosypGr+OwC+AJgDiGzItPvMEhFiZYa/hXks4Fsky/mfcP1OrrZaL1rf+DKWHz6p1nu8OprG7HIOxDS8fzshDeY7eNKBNz1cEK9zeWyNZw+z1pjmHcAAA" },
+  "/images/projects/terracotta-jali-villa/03-exterior.jpg": { width: 2000, height: 1125, blurDataURL:
+    "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoOAAgAA4BaJYwCdAYtpq1LL7JgAPlwhO4yJHPMTuRl0gyTSbHwVneS+sOacInVY3LswKUPwMKvXUqeJVHB017QbLZH15gSwAA=" },
+  "/images/projects/terracotta-jali-villa/04-kitchen-counter.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOgA2lXgrJpDtTS3HsAAP5aEXwGpD9USn79qMsfCSRN2ruj7hydjMJC8RvO5m+m60gknixE3+gMw+ULJApcIcy0ODh6sisZswQv6jjH8tjiwaabkuPkpxrs8uNTt7A5zvp3/gOVp7p4NRChREutBP8vvX42lWzg6y7tC49vXv8AAAA=" },
+  "/images/projects/terracotta-jali-villa/05-staircase-jali.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQAwCdASoOABkAPu1iqU2ppaQiMAgBMB2JZQCdAB9mLAmCuNP494AA/d+h0ihpM+HrZtvH3ZwtxkmiS+SrE7sspjYqSc+Ei+B3yZKZe+KWQHl3np1oPXlZfu0SEyR+yApzv92BWFRZnXi8OC/YIV/ZbqEl16p/reRGp+7LCI0N6hAHEdXY87wAAAA=" },
+  "/images/projects/terracotta-jali-villa/06-bedroom-balcony.jpg": { width: 2000, height: 1127, blurDataURL:
+    "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoOAAgAA4BaJZQCdADRGskZcAAA/GdyU00TMA9Sex/LdwPYSY4orw0cVzqY9tWb2Yg6xXtDDwEbL1yI64FRjWw9JaAAAA==" },
+  "/images/projects/terracotta-jali-villa/07-wash-niche.jpg": { width: 1344, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACwAwCdASoOABUAPu1iqU2ppaQiMAgBMB2JQBWAAob2A8gQPIgQAAD8Wmuw8AE22/q3ie//+hONHVTckS9BdNF2icfUQ/8S1eYEAlPkyEauqh+Fw0RrSIwNgAXcKk2cUt2SVXqYE9ubcts1ffioKwQUAAA=" },
+  "/images/projects/terracotta-jali-villa/08-living-tv-wall.jpg": { width: 1539, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwAwCdASoOABIAPu1iqU2ppaOiMAgBMB2JQBOgA4iwA7EdRtLlsAD8XIojTc3bPHpymHdRvqzETE2fNhb5KX9LB/Yzc8e2IGA8tIdTxMk0p7xbjPH0cQt1GGiVLJASKNPxqWrjw9yGrzrpbM9Jj8LkpCDZX+gA" },
+  "/images/projects/terracotta-jali-villa/09-jali-stair-top.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOgA1R6AH2JjQzgAPxbjPVTzYdsMyPYTgDBeSGEnOZ9698XuTQmaXKHiDbPhVbWYXp01c1iYPqjfheB8essuevyitPhkJ1uDAEFcNofLBcTvT1UOrCAAAA=" },
+  "/images/projects/terracotta-jali-villa/10-courtyard-slate.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZQDHE8AqQPdiPjO/pgIUjwWDYAAA94OeWp0I0O9ELDuT5hFfv0Zvr7i06bkxCGQqtuiSu73w4XGE2K+26fNRnt2tzXNTdsuRQa94Lc7r9qeFktJtabhwVmlLkwAMaggd8KNV4lwNjzccrCFVe396XYSUth1HH8rwt1K4F6wG4Fd3gAA=" },
+  "/images/projects/terracotta-jali-villa/11-dining-table.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoOABkAPu1kqk4ppaQiMAgBMB2JYgCdAB6GGh5M7uuKjR1284AA/pGJmBiP5ccZFzVwbvmUV4oQOPqI55zNhzwxZZ5Y3W8RveaTocXJHllHvCTawCey7I1zDUliMjwj0hRB/ZfkT7PVIvKAsgX14t/NlpHduEqAZn1PD0y9YAA=" },
+  "/images/projects/terracotta-jali-villa/12-bedroom-grey.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JZQDCgB2h6q7jKwhptRkgAP6RKHlkJRw/HrLMDQXvOIO56H9Aai0TCoEI63BShZu+co6U+XS22NbIkbp8iKkvTv5Urfx5Axv+4U18EbX/Nap0ezAAAA==" },
+  "/images/projects/terracotta-jali-villa/13-kitchen-sink.jpg": { width: 2000, height: 1127, blurDataURL:
+    "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoOAAgAA4BaJQBOkBsjGXfL/3l4YAD9uXqpQGB9f3qL/NP1j3iyA5uVlryo5MJOiiCnrJZ1Cmgkhqn0RHLuW5CSIi9MApx90N7veIYAAAA=" },
+  "/images/projects/walnut-apartment/01-kitchen-wide.jpg": { width: 2000, height: 1127, blurDataURL:
+    "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoOAAgAA4BaJYwCdADcJQtlvmAA/b+YrMTK7FdCbJnZwLc2mQ8x32kY6vcwnL5r5kA2PeS9L/lFilpVuSoQVH8JLURocAAA" },
+  "/images/projects/walnut-apartment/02-foyer.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JQBYdg3FqudNASwTW3sBqgADyX4YhWDI18S/C6HnLT97/m4dzZfwA36ExzV6uSveqYBoFaZLlVj3y+ZbZzkxX7wBMejjaJuy9g8e2uF6blyVtui8BRfpWnTMM3pu8Q85a8NL4fEcfN7vGAAA=" },
+  "/images/projects/walnut-apartment/03-dining-crockery.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYwCdBHaQkHsvrlE8tbfOjCEAAPzZKslWGmU3dn7At6dCkSxv487HwWJ59wEhdN8TqYWQaIOL9ptMwOcjGYeBFicx7gbKGRBJjXCbMciJ47S2/K8Xp8ZaiycVeCFF6H3NAfNDM9FDEUfYkAA=" },
+  "/images/projects/walnut-apartment/04-kitchen-sink-run.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZQAATvyjIJoNy13z6tXFQAD+iTZnAXFAynMYexL3dg+GUgVwge+X1E+f1uzJYp6C7KsTL4jbPfrhY4YHmM5xm6A5xpw0o9CxjobbyFO1KXQ4bMgxSp+1dXDabYAA" },
+  "/images/projects/walnut-apartment/05-passage-ceiling.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwAwCdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOgBChJwnFgrHoffmcAAPykx4pwT0FxXHcVRBKrqEgW14z89BZVOxdPwMTN1FC7xwz9jCWCcCaTJVEorm0CE3BLG8hiBFD3OgwbdmYCCRRwDKELOrkyRVpYAA==" },
+  "/images/projects/walnut-apartment/06-wash-counter.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JYgCdMoAluBb/yFOqub61ufNBtnAA/luDF6qHFKh2teM2qHor+lJ1V2VLK5BdTLxPeHnvmJqkJjbI1eB1vAqEV7wIxfQENEz+QxgBuXbwm7fJnnPrRymBZLhUfumnlezGRUER7s8GmuMo0ouooviqgFek8HhoG6aspr85kAYu3/IAAAA=" },
+  "/images/projects/walnut-apartment/07-green-shower.jpg": { width: 1500, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoOABMAPu1iqk2ppaQiMAgBMB2JYwC3vHAAy3iLudeUN0gYfgAA908m256I+b2zayU2USSqG1Gr8itcUqozxPZDVGAa82eRie94vEHOHHzFqhFNKIF+8LZvWVJYeSUMcncnG3PAyaN54gAA" },
+  "/images/projects/walnut-apartment/08-pooja-cabinet.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQBACdASoOABkAPu1iqU2ppaQiMAgBMB2JYgCdMoRwAB8TwGKsVA8/IeCAAP7gq2tH8NBJGUtzbC7RcN23q68Bwvl04EKM9uMB49IlYvEXk4uZjDtzZTqSwFWCoQR5ufT3KQAA" },
+  "/images/projects/walnut-apartment/09-kitchen-corner.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZQCsAB9E8qckddiTXk4b+8AA/K8z+EpoZZ6xNuoVdiv1802N3Yhu1G/1aKkWGDOR7Ge3+NJrt9Y+jzV0HHMQmqxvAcgu7FRZLXQcyejLZWEZ1LkNEU4lfpXtE1n2TU4kMAAA" },
+  "/images/projects/walnut-apartment/10-bathroom-grey.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAQBACdASoOABkAPu1kqU2ppaQiMAgBMB2JZACdMoADKjCaqgKZ9EDjyAD81MU2WNiklNeYeVkP6bKLeuASSK4DKZCjIjV49Skb6KvNu+5cBFpzURbgwM6BfVjRpHggUPHD1YMsxGlTPEKzs6GKF0NgxW1QEkhbMVX0HD7UW9TBdNTZR3tmGetJKD96485DWEdLcFBt2wY6AA==" },
+  "/images/projects/walnut-apartment/11-bathroom-teal.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JZgCdAGOoNbk2zTnDoNpsXQAA/ScKM3JUTAMZA3q7HJ6WsiLFJdYu8wf/01mW+3QNxZOKAoFAbh/qQ+7JeUOAynIZF+vtIoJZ0YE9Hb9BpzV0DU1ZnBCQcZt7eE+EIYHimpxkkBl6lgAA" },
+  "/images/projects/walnut-apartment/after-wash-counter.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBACdASoOABkAPu1iqU2ppaOiMAgBMB2JaACdACBX0p6AbtMQf8n+MAAA/kSgUSJEm6a9Bq4rCdEM8AG9uFap2Ps/85hmdG99RmkAWf5OyPCSmghg0ooHjD0sG2F3Oezvj399yoa7mfKPjSO19vFARS20CjPcHgKYyYlv74ZBBdISJ/HvIU53l0xGYzXT3E2KZh6xPwAAAA==" },
+  "/images/projects/walnut-apartment/before-foyer.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwAwCdASoOABkAPu1iqk2ppaQiMAgBMB2JZQAAW79MvqVOke1qos4gAP7o3QIg2EDTUCbVn/iwNDXfaeJMn/b2DL6TfpRm3qsXMoSeO1F/1DZLbWmIl6V9/Fem0FOMOOhyIdcR7hmkaZ6C5koh3RiPtuBzMZTAAAA=" },
+  "/images/projects/walnut-apartment/before-kitchen-sink.jpg": { width: 1125, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAACQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOmUABqje6/fSJV6qI8nsfssIAA/okMjKgb/7jaZm5flrk7cXBNPljbrqiucAif6ox5FZUcAULB6K3KAxWE6/UN399Ib9Yjj1yHcKXPqBxMWs8DM9v29io3Au5tjPWHkWx6XsZTdgAA" },
+  "/images/projects/walnut-apartment/before-kitchen.jpg": { width: 2000, height: 1127, blurDataURL:
+    "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoOAAgAA4BaJYgCdADcTYP180AA/kgJfbtUMv5ky8DHcoReYaYSKo8Oot7FoY1Z+VvqRreiWbpN5hPYaLRdb3zMV9i5M1RgAAA=" },
+  "/images/projects/walnut-apartment/before-wash-counter.jpg": { width: 1127, height: 2000, blurDataURL:
+    "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoOABkAPu1iqU2ppaOiMAgBMB2JQBOgBArjVjG9iHv7Qm030ADLvjU9YBVSfkL/c/+g2hb+byxBJW24OOjF5GvxNabv0j9XgoSBw6dqSVhneWGjLgrhX5IsDYLixsawczmcV5j27IS0VRvD6eU162F4wkX/jBw1R588MooA" },
 };

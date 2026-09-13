@@ -22,7 +22,7 @@ export function ContactActionRow({ action }: { action: ContactAction }) {
           "group grid grid-cols-[3rem_1fr_auto] items-center gap-5 py-6 sm:grid-cols-[3.5rem_1fr_auto] sm:gap-7 sm:py-7 focus-visible:outline-offset-[-3px]"
         )}
       >
-        <span className="relative flex h-12 w-12 items-center justify-center rounded-full border border-[var(--hairline-on-dark)] text-ivory transition-colors duration-300 group-hover:border-teal-soft group-hover:text-teal-soft sm:h-14 sm:w-14">
+        <span className="relative flex h-12 w-12 items-center justify-center rounded-full border border-[var(--hairline-on-dark)] text-ivory transition-colors duration-300 group-hover:border-teal-light group-hover:text-teal-light sm:h-14 sm:w-14">
           <ActionIcon kind={action.kind} />
         </span>
 
@@ -39,7 +39,7 @@ export function ContactActionRow({ action }: { action: ContactAction }) {
         <ArrowUpRight
           aria-hidden
           strokeWidth={stroke}
-          className="h-5 w-5 text-ivory/50 transition-[transform,color] duration-300 ease-[var(--ease-out)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-ivory"
+          className="h-5 w-5 text-ivory/50 transition-[transform,color] duration-300 ease-[var(--ease-out)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-light"
         />
       </a>
     </li>
@@ -64,7 +64,7 @@ function ActionIcon({ kind }: { kind: ContactAction["kind"] }) {
           <Send
             aria-hidden
             strokeWidth={stroke}
-            className="icon-plane absolute right-1.5 top-1.5 h-3 w-3 opacity-0"
+            className="icon-plane absolute right-1.5 top-1.5 h-3 w-3 text-brick opacity-0"
           />
         </>
       );
@@ -74,7 +74,7 @@ function ActionIcon({ kind }: { kind: ContactAction["kind"] }) {
           <MessageCircle aria-hidden strokeWidth={stroke} className="h-5 w-5" />
           <span
             aria-hidden
-            className="icon-ripple absolute inset-0 rounded-full border border-teal-soft opacity-0"
+            className="icon-ripple absolute inset-0 rounded-full border border-brick opacity-0"
           />
         </>
       );
@@ -88,7 +88,7 @@ function ActionIcon({ kind }: { kind: ContactAction["kind"] }) {
           <MapPin aria-hidden strokeWidth={stroke} className="icon-pin relative h-5 w-5" />
           <span
             aria-hidden
-            className="icon-pin-shadow absolute bottom-3 h-[3px] w-3 rounded-full bg-teal-soft/70 opacity-0"
+            className="icon-pin-shadow absolute bottom-3 h-[3px] w-3 rounded-full bg-brick/70 opacity-0"
           />
         </>
       );

@@ -29,7 +29,7 @@ export function Transformation({ pairs }: { pairs: ResolvedPair[] }) {
           <Reveal family="wipeBottom">
             <h2
               id="transformations-heading"
-              className="font-display text-[clamp(2.25rem,4.2vw,3.75rem)] leading-[1.02] text-slate"
+              className="heading-mark font-display text-[clamp(2.25rem,4.2vw,3.75rem)] leading-[1.02] text-slate"
             >
               {transformationCopy.heading}
             </h2>
@@ -71,7 +71,7 @@ export function Transformation({ pairs }: { pairs: ResolvedPair[] }) {
                         aria-pressed={isActive}
                         className={cn(
                           "flex w-full items-baseline justify-between gap-4 py-4 pl-5 text-left transition-colors duration-300 focus-visible:outline-offset-[-3px]",
-                          isActive ? "text-slate" : "text-slate-muted hover:text-slate"
+                          isActive ? "text-slate" : "text-slate-muted hover:text-teal-deep"
                         )}
                       >
                         <span className="font-display text-[1.375rem] leading-tight">

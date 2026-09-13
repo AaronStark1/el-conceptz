@@ -20,7 +20,7 @@ export function SelectedWork({ projects }: { projects: ResolvedProject[] }) {
         <Reveal family="wipeBottom">
           <h2
             id="work-heading"
-            className="font-display text-[clamp(2.25rem,4.2vw,3.75rem)] leading-[1.02] text-slate"
+            className="heading-mark font-display text-[clamp(2.25rem,4.2vw,3.75rem)] leading-[1.02] text-slate"
           >
             {workCopy.heading}
           </h2>

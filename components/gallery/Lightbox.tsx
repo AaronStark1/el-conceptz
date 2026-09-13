@@ -84,7 +84,7 @@ export function Lightbox({ request, onClose, onIndexChange }: LightboxProps) {
             <p className="text-meta text-ivory/60">
               {request.label && <span className="text-ivory/85">{request.label}</span>}
               {count > 1 && (
-                <span className="ml-3 tabular-nums" aria-live="polite">
+                <span className="ml-3 tabular-nums text-teal-light" aria-live="polite">
                   {index + 1} of {count}
                 </span>
               )}
@@ -93,7 +93,7 @@ export function Lightbox({ request, onClose, onIndexChange }: LightboxProps) {
               type="button"
               onClick={onClose}
               aria-label="Close viewer"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-ivory/80 transition-colors hover:bg-ivory/10 hover:text-ivory"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-ivory/80 transition-colors hover:bg-teal-light/10 hover:text-teal-light"
             >
               <X className="h-5 w-5" strokeWidth={1.75} aria-hidden />
             </button>
@@ -130,7 +130,7 @@ export function Lightbox({ request, onClose, onIndexChange }: LightboxProps) {
                   />
                 </div>
                 {(photo.caption || photo.alt) && (
-                  <figcaption className="mt-3 max-w-[60ch] text-center text-[0.875rem] text-ivory/70">
+                  <figcaption className="mt-3 max-w-[60ch] text-center text-[0.875rem] font-medium text-ivory/70">
                     {photo.caption ?? photo.alt}
                   </figcaption>
                 )}
@@ -146,7 +146,7 @@ export function Lightbox({ request, onClose, onIndexChange }: LightboxProps) {
                     step(-1);
                   }}
                   aria-label="Previous photograph"
-                  className="absolute left-3 top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-ivory/20 text-ivory/80 transition-colors hover:border-ivory/60 hover:text-ivory sm:inline-flex"
+                  className="absolute left-3 top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-ivory/20 text-ivory/80 transition-colors hover:border-teal-light hover:text-teal-light sm:inline-flex"
                 >
                   <ChevronLeft className="h-5 w-5" strokeWidth={1.75} aria-hidden />
                 </button>
@@ -157,7 +157,7 @@ export function Lightbox({ request, onClose, onIndexChange }: LightboxProps) {
                     step(1);
                   }}
                   aria-label="Next photograph"
-                  className="absolute right-3 top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-ivory/20 text-ivory/80 transition-colors hover:border-ivory/60 hover:text-ivory sm:inline-flex"
+                  className="absolute right-3 top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-ivory/20 text-ivory/80 transition-colors hover:border-teal-light hover:text-teal-light sm:inline-flex"
                 >
                   <ChevronRight className="h-5 w-5" strokeWidth={1.75} aria-hidden />
                 </button>

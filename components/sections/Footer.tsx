@@ -12,11 +12,11 @@ export function Footer() {
   const location = contactActions.find((a) => a.kind === "location");
 
   return (
-    <footer className="room-slate border-t border-[var(--hairline-on-dark)]">
+    <footer className="room-slate border-t border-teal-soft/35">
       <div className="wrap grid gap-10 py-14 md:grid-cols-12 md:gap-8">
         <div className="md:col-span-5">
           <Logo height={28} />
-          <p className="measure-narrow mt-5 text-[0.9375rem] leading-relaxed text-ivory/55">
+          <p className="measure-narrow mt-5 text-[0.9375rem] font-medium leading-relaxed text-ivory/55">
             {siteConfig.tagline}. {siteConfig.region}.
           </p>
         </div>
@@ -25,13 +25,13 @@ export function Footer() {
           <ul className="flex flex-col gap-2.5 text-[0.9375rem] text-ivory/70">
             {primaryNav.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="transition-colors hover:text-ivory">
+                <Link href={item.href} className="transition-colors hover:text-teal-light">
                   {item.label}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href={contactCta.href} className="link-line text-ivory">
+              <Link href={contactCta.href} className="link-line font-bold text-teal-light">
                 {contactCta.label}
               </Link>
             </li>
@@ -40,12 +40,12 @@ export function Footer() {
 
         <div className="flex flex-col gap-2.5 text-[0.9375rem] text-ivory/70 md:col-span-4">
           {email && (
-            <a href={email.href} className="transition-colors hover:text-ivory">
+            <a href={email.href} className="transition-colors hover:text-teal-light">
               {email.value}
             </a>
           )}
           {phone && (
-            <a href={phone.href} className="transition-colors hover:text-ivory">
+            <a href={phone.href} className="transition-colors hover:text-teal-light">
               {phone.value}
             </a>
           )}
@@ -58,7 +58,7 @@ export function Footer() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="link-line text-ivory"
+                    className="link-line text-ivory transition-colors hover:text-teal-light"
                   >
                     {social.platform}
                   </a>
@@ -69,11 +69,11 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="wrap flex flex-wrap items-center justify-between gap-3 border-t border-[var(--hairline-on-dark)] py-5 text-[0.8125rem] text-ivory/45">
+      <div className="wrap flex flex-wrap items-center justify-between gap-3 border-t border-[var(--hairline-on-dark)] py-5 text-[0.8125rem] text-ivory/60">
         <p>
           &copy; {year} {siteConfig.legalName}. All rights reserved.
         </p>
-        <Link href="#top" className="transition-colors hover:text-ivory">
+        <Link href="#top" className="transition-colors hover:text-teal-light">
           Back to top
         </Link>
       </div>

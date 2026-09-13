@@ -99,8 +99,8 @@ export function OpeningScene({ progress }: { progress: MotionValue<number> }) {
         <motion.path
           d={scene.arch.outline}
           fill="none"
-          stroke={palette.slateDeep}
-          strokeOpacity="0.28"
+          stroke={palette.teal}
+          strokeOpacity="0.5"
           strokeWidth="1.25"
           {...draw(0.6, 1.8)}
         />

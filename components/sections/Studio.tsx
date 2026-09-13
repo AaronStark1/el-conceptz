@@ -27,7 +27,7 @@ export function Studio() {
           <WordReveal
             as="h2"
             text={studioCopy.statement}
-            className="font-display max-w-[15ch] text-[clamp(2.5rem,4.8vw,4.5rem)] leading-[1.02] text-slate"
+            className="heading-mark font-display max-w-[15ch] text-[clamp(2.5rem,4.8vw,4.5rem)] leading-[1.02] text-slate"
           />
           <span id="studio-heading" className="sr-only">
             About the studio
@@ -44,7 +44,7 @@ export function Studio() {
           <Reveal family="rise" delay={0.2} className="mt-14 flex items-baseline gap-5">
             <span className="font-display text-[clamp(4.5rem,7vw,6.5rem)] leading-[0.85] text-teal">
               {studioCopy.experience.figure}
-              <span className="text-[0.5em] align-top">+</span>
+              <span className="text-[0.5em] align-top text-brick">+</span>
             </span>
             <span className="max-w-[16ch] text-[0.9375rem] leading-snug text-slate-muted">
               <span className="font-semibold text-slate">{studioCopy.experience.unit}</span>{" "}

@@ -63,7 +63,7 @@ export function MobileMenu({ open, onClose, active }: MobileMenuProps) {
               type="button"
               onClick={onClose}
               aria-label="Close menu"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-slate transition-colors hover:bg-[rgb(47_57_65/0.06)]"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-slate transition-colors hover:bg-teal/10"
             >
               <X className="h-5 w-5" strokeWidth={1.75} aria-hidden />
             </button>
@@ -87,7 +87,9 @@ export function MobileMenu({ open, onClose, active }: MobileMenuProps) {
                     aria-current={active === item.sectionId ? "true" : undefined}
                     className={cn(
                       "font-display block py-2 text-[2.75rem] leading-[1.05] transition-colors",
-                      active === item.sectionId ? "text-slate" : "text-slate-muted hover:text-slate"
+                      active === item.sectionId
+                        ? "text-teal-deep"
+                        : "text-slate-muted hover:text-teal-deep"
                     )}
                   >
                     {item.label}
@@ -106,18 +108,18 @@ export function MobileMenu({ open, onClose, active }: MobileMenuProps) {
               <Link
                 href={contactCta.href}
                 onClick={onClose}
-                className="link-line text-[0.9375rem] font-semibold text-slate"
+                className="link-line text-[0.9375rem] font-bold text-teal-deep"
               >
                 {contactCta.label}
               </Link>
               <div className="text-meta mt-6 flex flex-col gap-1.5">
                 {email && (
-                  <a href={email.href} className="hover:text-slate">
+                  <a href={email.href} className="transition-colors hover:text-teal-deep">
                     {email.value}
                   </a>
                 )}
                 {phone && (
-                  <a href={phone.href} className="hover:text-slate">
+                  <a href={phone.href} className="transition-colors hover:text-teal-deep">
                     {phone.value}
                   </a>
                 )}

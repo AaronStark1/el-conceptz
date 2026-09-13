@@ -30,7 +30,7 @@ export function WorkItem({ project, index }: WorkItemProps) {
 
   const meta = (
     <p className="text-meta flex flex-wrap gap-x-5 gap-y-1">
-      <span>{categoryLabels[project.category]}</span>
+      <span className="text-teal-deep">{categoryLabels[project.category]}</span>
       {project.location && <span>{project.location}</span>}
       {project.year && <span>{project.year}</span>}
     </p>
@@ -64,7 +64,7 @@ export function WorkItem({ project, index }: WorkItemProps) {
       <button
         type="button"
         onClick={() => view(0)}
-        className="group mt-8 inline-flex items-center gap-2 text-[0.8125rem] font-semibold tracking-[0.06em] text-slate"
+        className="group mt-8 inline-flex items-center gap-2 text-[0.8125rem] font-bold tracking-[0.06em] text-teal-deep"
       >
         <span className="link-line">{workCopy.viewProject}</span>
         <span className="text-slate-muted">{photos.length}</span>

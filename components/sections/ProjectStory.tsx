@@ -37,7 +37,7 @@ export function ProjectStory({ project }: { project: ResolvedProject }) {
           <Reveal family="wipeBottom">
             <h2
               id="story-heading"
-              className="font-display text-[clamp(2.25rem,4.2vw,3.75rem)] leading-[1.02] text-slate"
+              className="heading-mark font-display text-[clamp(2.25rem,4.2vw,3.75rem)] leading-[1.02] text-slate"
             >
               {storyCopy.heading}
             </h2>
@@ -86,7 +86,7 @@ export function ProjectStory({ project }: { project: ResolvedProject }) {
                 <button
                   type="button"
                   onClick={() => open({ photos, index: 0, label: project.title })}
-                  className="group inline-flex items-center gap-2 text-[0.8125rem] font-semibold tracking-[0.06em] text-slate"
+                  className="group inline-flex items-center gap-2 text-[0.8125rem] font-bold tracking-[0.06em] text-teal-deep"
                 >
                   <span className="link-line">{workCopy.viewProject}</span>
                   <span className="text-slate-muted">{photos.length}</span>
@@ -147,7 +147,7 @@ function Chapter({
         <h3
           className={cn(
             "font-display text-[clamp(1.75rem,2.6vw,2.5rem)] leading-[1.1] transition-colors duration-700",
-            active ? "text-slate" : "text-slate lg:text-slate/45"
+            active ? "text-slate lg:text-teal-deep" : "text-slate lg:text-slate/45"
           )}
         >
           {chapter.title}

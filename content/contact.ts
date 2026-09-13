@@ -5,10 +5,10 @@ import type { ContactAction } from "@/types";
  * TODO(owner): replace every placeholder below with the studio's real details.
  * The values are deliberately obvious placeholders so nothing fake ships by accident.
  */
-const email = "studio@elconceptz.com";
-const phoneDisplay = "+91 00000 00000";
-const phoneE164 = "+910000000000";
-const whatsappNumber = "910000000000"; // digits only, country code first
+const email = "elconceptz@gmail.com";
+const phoneDisplay = "+91 98958 12897";
+const phoneE164 = "+919895812897";
+const whatsappNumber = "919895812897"; // digits only, country code first
 const locationLabel = "Kerala, India";
 const mapsQuery = "El Conceptz interior design Kerala";
 

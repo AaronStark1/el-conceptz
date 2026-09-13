@@ -30,7 +30,7 @@ export function Philosophy() {
           Design philosophy
         </h2>
         <p
-          className="font-display max-w-[21ch] text-[clamp(2.25rem,5.4vw,5rem)] leading-[1.06] text-slate"
+          className="heading-mark font-display max-w-[21ch] text-[clamp(2.25rem,5.4vw,5rem)] leading-[1.06] text-slate"
           aria-label={philosophyCopy.statement}
         >
           {words.map((word, i) => (

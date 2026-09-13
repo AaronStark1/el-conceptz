@@ -36,7 +36,7 @@ export function Services({ groups }: { groups: ServiceGroup[] }) {
         <Reveal family="wipeBottom">
           <h2
             id="services-heading"
-            className="font-display text-[clamp(2.25rem,4.2vw,3.75rem)] leading-[1.02] text-slate"
+            className="heading-mark font-display text-[clamp(2.25rem,4.2vw,3.75rem)] leading-[1.02] text-slate"
           >
             {servicesCopy.heading}
           </h2>
@@ -63,7 +63,7 @@ export function Services({ groups }: { groups: ServiceGroup[] }) {
                   viewport={viewportOnce}
                   variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.07 } } }}
                 >
-                  <span className="text-label pt-2 text-teal">{group.title}</span>
+                  <span className="text-label pt-2 text-teal-deep">{group.title}</span>
                   <ul className="flex flex-col gap-1">
                     {group.services.map((service, si) => {
                       const index = offset + si;
@@ -90,7 +90,9 @@ export function Services({ groups }: { groups: ServiceGroup[] }) {
                             <h3
                               className={cn(
                                 "font-display text-[clamp(1.625rem,2.6vw,2.375rem)] leading-[1.1] transition-[color,transform] duration-500 ease-[var(--ease-out)]",
-                                isActive ? "text-slate lg:translate-x-2" : "text-slate/70"
+                                isActive
+                                  ? "text-slate lg:translate-x-2 lg:text-teal-deep"
+                                  : "text-slate/70"
                               )}
                             >
                               {service.title}

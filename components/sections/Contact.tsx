@@ -19,7 +19,7 @@ export function Contact() {
           <Reveal family="wipeBottom">
             <h2
               id="contact-heading"
-              className="font-display text-[clamp(2.75rem,6.4vw,5.75rem)] leading-[0.98] text-ivory"
+              className="heading-mark heading-mark-dark font-display text-[clamp(2.75rem,6.4vw,5.75rem)] leading-[0.98] text-ivory"
             >
               {contactCopy.heading}
             </h2>

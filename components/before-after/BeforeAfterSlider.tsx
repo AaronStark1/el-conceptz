@@ -155,10 +155,10 @@ export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
           </motion.div>
         </AnimatePresence>
 
-        <span className="text-label pointer-events-none absolute left-4 top-4 rounded-md bg-[rgb(47_57_65/0.55)] px-2.5 py-2 text-ivory backdrop-blur-sm">
+        <span className="text-label pointer-events-none absolute left-4 top-4 rounded-md bg-slate/80 px-2.5 py-2 text-ivory backdrop-blur-sm">
           {transformationCopy.beforeLabel}
         </span>
-        <span className="text-label pointer-events-none absolute right-4 top-4 rounded-md bg-[rgb(47_57_65/0.55)] px-2.5 py-2 text-ivory backdrop-blur-sm">
+        <span className="text-label pointer-events-none absolute right-4 top-4 rounded-md bg-teal-deep/95 px-2.5 py-2 text-ivory backdrop-blur-sm">
           {transformationCopy.afterLabel}
         </span>
 
@@ -178,7 +178,7 @@ export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
             onKeyDown={onKeyDown}
             onFocus={takeOver}
             className={cn(
-              "pointer-events-auto absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-ivory text-slate shadow-[0_8px_24px_-8px_rgb(47_57_65/0.5)] ring-brick/80 transition-[box-shadow,transform] duration-300 group-hover:ring-2 focus-visible:outline-none focus-visible:ring-2 sm:h-12 sm:w-12",
+              "pointer-events-auto absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-ivory text-slate shadow-[0_8px_24px_-8px_rgb(47_57_65/0.5)] ring-brick transition-[box-shadow,transform] duration-300 group-hover:ring-2 focus-visible:outline-none focus-visible:ring-2 sm:h-12 sm:w-12",
               !interacted && !reduce && "knob-breathe"
             )}
           >
