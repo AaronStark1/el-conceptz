@@ -30,17 +30,18 @@ export function Logo({
   );
 }
 
-/** Wordmark only (841 x 142). Used beneath the animated mark in the opening. */
-export function Wordmark({ className, height = 36 }: { className?: string; height?: number }) {
-  const width = Math.round(height * (841 / 142));
+/**
+ * Wordmark only (841 x 142). Fills its container's width and keeps its ratio, so the opening
+ * can size the whole lockup from one measure. Loaded eagerly: it is part of the first paint.
+ */
+export function Wordmark({ className }: { className?: string }) {
   return (
     <Image
       src="/brand/el-conceptz-wordmark.png"
       alt="el.conceptz"
-      width={width}
-      height={height}
-      className={cn("select-none", className)}
-      style={{ height, width }}
+      width={841}
+      height={142}
+      className={cn("h-auto w-full select-none", className)}
       loading="eager"
       fetchPriority="high"
       draggable={false}

@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { X } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import { Logo } from "@/components/brand/Logo";
+import { ctaPill, ctaPillArrow } from "@/components/navigation/cta-pill";
 import { contactActions } from "@/content/contact";
 import { contactCta, primaryNav } from "@/content/navigation";
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
@@ -58,12 +59,12 @@ export function MobileMenu({ open, onClose, active }: MobileMenuProps) {
           transition={{ duration: 0.7, ease: easeInOut, opacity: { duration: 0.35 } }}
         >
           <div className="wrap flex h-[var(--nav-height)] items-center justify-between">
-            <Logo height={26} />
+            <Logo height={34} />
             <button
               type="button"
               onClick={onClose}
               aria-label="Close menu"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-slate transition-colors hover:bg-teal/10"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-slate transition-colors duration-300 hover:bg-teal/10"
             >
               <X className="h-5 w-5" strokeWidth={1.75} aria-hidden />
             </button>
@@ -105,12 +106,9 @@ export function MobileMenu({ open, onClose, active }: MobileMenuProps) {
               exit={{ opacity: 0, transition: { duration: 0.2 } }}
               transition={{ delay: 0.6, duration: 0.7 }}
             >
-              <Link
-                href={contactCta.href}
-                onClick={onClose}
-                className="link-line text-[0.9375rem] font-bold text-teal-deep"
-              >
+              <Link href={contactCta.href} onClick={onClose} className={ctaPill}>
                 {contactCta.label}
+                <ArrowRight className={ctaPillArrow} strokeWidth={1.75} aria-hidden />
               </Link>
               <div className="text-meta mt-6 flex flex-col gap-1.5">
                 {email && (

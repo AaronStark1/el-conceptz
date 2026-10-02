@@ -22,7 +22,7 @@ export function ContactActionRow({ action }: { action: ContactAction }) {
           "group grid grid-cols-[3rem_1fr_auto] items-center gap-5 py-6 sm:grid-cols-[3.5rem_1fr_auto] sm:gap-7 sm:py-7 focus-visible:outline-offset-[-3px]"
         )}
       >
-        <span className="relative flex h-12 w-12 items-center justify-center rounded-full border border-[var(--hairline-on-dark)] text-ivory transition-colors duration-300 group-hover:border-teal-light group-hover:text-teal-light sm:h-14 sm:w-14">
+        <span className="relative flex h-12 w-12 items-center justify-center rounded-full border border-teal-light/30 text-teal-light transition-colors duration-300 group-hover:border-teal-light group-hover:bg-teal-light/10 group-focus-visible:border-teal-light group-focus-visible:bg-teal-light/10 sm:h-14 sm:w-14">
           <ActionIcon kind={action.kind} />
         </span>
 

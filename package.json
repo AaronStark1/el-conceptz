@@ -15,8 +15,11 @@
     "photos": "npm run photos:import && npm run photos:manifest"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "animejs": "^4.5.0",
     "clsx": "^2.1.1",
     "framer-motion": "^13.2.0",
+    "gsap": "^3.15.0",
     "lucide-react": "^1.44.0",
     "next": "16.3.4",
     "react": "19.2.8",

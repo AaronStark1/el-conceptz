@@ -15,6 +15,14 @@
   --slate-muted: #556772;
   --gray-muted: #7b858c;
 
+  /*
+    Type ink: the logo orange taken down to a burnt sienna that sits on the warm ivory.
+    Headings and body read in --ink (7.7:1 on ivory), secondary copy in --ink-muted (4.8:1).
+    The slate values above remain the dark room surfaces and hairlines.
+  */
+  --ink: #7c3a21;
+  --ink-muted: #9a5b43;
+
   --teal: #2f8f8a;
   --teal-soft: #5da39f;
   /* Derived teals: deep for text and filled controls on light surfaces (AA), light for text on slate */
@@ -37,6 +45,9 @@
 
   /* Layout */
   --nav-height: 72px;
+  /* Compact header once the page is scrolled. Anchor offsets are measured against this. */
+  --nav-height-scrolled: 64px;
+  --anchor-gap: 1.25rem;
   --gutter: clamp(1.25rem, 4vw, 3.5rem);
   --content-max: 1440px;
 
@@ -53,8 +64,8 @@
   --color-warm-white: var(--warm-white);
   --color-linen: var(--linen);
   --color-stone: var(--stone);
-  --color-slate: var(--slate-deep);
-  --color-slate-muted: var(--slate-muted);
+  --color-slate: var(--ink);
+  --color-slate-muted: var(--ink-muted);
   --color-gray-muted: var(--gray-muted);
   --color-teal: var(--teal);
   --color-teal-soft: var(--teal-soft);
@@ -77,192 +88,227 @@
   --breakpoint-xs: 30rem;
 }
 
-html {
-  color-scheme: light;
-  overflow-x: clip;
-  scroll-padding-top: var(--nav-height);
-  -webkit-text-size-adjust: 100%;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+/*
+  Element defaults live in @layer base and the site's primitives in @layer components, so that
+  Tailwind utilities (which sit in @layer utilities) win over them as expected. Unlayered rules
+  would otherwise beat every utility regardless of specificity.
+*/
+@layer base {
   html {
-    scroll-behavior: smooth;
+    color-scheme: light;
+    overflow-x: clip;
+    /* Native fallback for direct hash loads. In-page anchor clicks are eased by AnchorScroll
+     with the same offset, so smooth scrolling is not delegated to the browser. */
+    scroll-padding-top: calc(var(--nav-height-scrolled) + var(--anchor-gap));
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Every section that can be an anchor target clears the compact header with room to breathe. */
+  section[id] {
+    scroll-margin-top: calc(var(--nav-height-scrolled) + var(--anchor-gap));
+  }
+
+  body {
+    background-color: var(--ivory);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 450;
+    line-height: 1.7;
+    min-height: 100dvh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: rgb(47 143 138 / 0.22);
+  }
+
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 3px;
   }
 }
 
-body {
-  background-color: var(--ivory);
-  color: var(--slate-deep);
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  font-weight: 450;
-  line-height: 1.7;
-  min-height: 100dvh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  overflow-x: clip;
-}
+@layer components {
+  /* Typography primitives */
+  .font-display {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.05;
+    font-feature-settings: "kern", "liga";
+  }
 
-::selection {
-  background: rgb(47 143 138 / 0.22);
-}
+  .font-display-light {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
 
-img,
-video {
-  display: block;
-  max-width: 100%;
-}
+  .text-label {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+  }
 
-button {
-  font: inherit;
-  color: inherit;
-}
+  .text-meta {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: var(--ink-muted);
+  }
 
-:focus-visible {
-  outline: 2px solid var(--teal);
-  outline-offset: 3px;
-  border-radius: var(--radius-sm);
-}
+  /*
+  Section mark: the brand's chapter stamp above major headings. A teal rule with a short
+  brick segment set off from it, like a dimension line and its tick. HeadingMarks adds
+  .is-drawn as the heading enters the viewport: the rule draws first, the tick lands after.
+  Transforms only, so the drawing never touches layout.
+*/
+  .heading-mark {
+    position: relative;
+  }
+  .heading-mark::before,
+  .heading-mark::after {
+    content: "";
+    height: 2px;
+    transform-origin: left center;
+    transform: scaleX(0);
+  }
+  .heading-mark::before {
+    display: block;
+    width: 2.5rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--teal);
+    transition: transform 1s var(--ease-in-out);
+  }
+  .heading-mark::after {
+    position: absolute;
+    top: 0;
+    left: 2.875rem;
+    width: 0.625rem;
+    background-color: var(--brick);
+    transition: transform 0.55s var(--ease-out) 0.7s;
+  }
+  .heading-mark.is-drawn::before,
+  .heading-mark.is-drawn::after {
+    transform: scaleX(1);
+  }
+  .heading-mark-dark::before {
+    background-color: var(--teal-light);
+  }
 
-/* Typography primitives */
-.font-display {
-  font-family: var(--font-serif);
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.05;
-  font-feature-settings: "kern", "liga";
-}
+  .measure {
+    max-width: 62ch;
+  }
 
-.font-display-light {
-  font-family: var(--font-serif);
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  line-height: 1.1;
-}
+  .measure-narrow {
+    max-width: 44ch;
+  }
 
-.text-label {
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-weight: 650;
-  line-height: 1;
-}
+  /* Page container */
+  .wrap {
+    width: 100%;
+    max-width: var(--content-max);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
 
-.text-meta {
-  font-family: var(--font-sans);
-  font-size: 0.8125rem;
-  letter-spacing: 0.02em;
-  font-weight: 550;
-  color: var(--slate-muted);
-}
+  /* Hairline rules tinted to the page */
+  .rule {
+    border-color: var(--hairline);
+  }
 
-/* Section mark: a short teal rule above major headings, the brand's chapter stamp */
-.heading-mark::before {
-  content: "";
-  display: block;
-  width: 2.5rem;
-  height: 2px;
-  margin-bottom: 1.25rem;
-  background-color: var(--teal);
-}
-.heading-mark-dark::before {
-  background-color: var(--teal-light);
-}
+  /* Section surfaces: each "room" of the page */
+  .room-ivory {
+    --room: var(--ivory);
+    background-color: var(--room);
+  }
+  .room-white {
+    --room: var(--warm-white);
+    background-color: var(--room);
+  }
+  .room-linen {
+    --room: var(--linen);
+    background-color: var(--room);
+  }
+  .room-stone {
+    --room: var(--stone);
+    background-color: var(--room);
+  }
+  .room-slate {
+    --room: var(--slate-deep);
+    background-color: var(--room);
+    color: var(--ivory);
+  }
 
-.measure {
-  max-width: 62ch;
-}
+  /* Photography frames */
+  .photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background-color: var(--stone);
+    isolation: isolate;
+  }
+  .photo-bleed {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--stone);
+    isolation: isolate;
+  }
 
-.measure-narrow {
-  max-width: 44ch;
-}
+  /* Underline link used for inline text links */
+  .link-line {
+    position: relative;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size var(--duration) var(--ease-out);
+  }
+  .link-line:hover,
+  .link-line:focus-visible {
+    background-size: 0% 1px;
+    background-position: 100% 100%;
+  }
 
-/* Page container */
-.wrap {
-  width: 100%;
-  max-width: var(--content-max);
-  margin-inline: auto;
-  padding-inline: var(--gutter);
-}
+  /* Fine grain for the deep slate room, applied to a fixed pseudo layer only */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: soft-light;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
 
-/* Hairline rules tinted to the page */
-.rule {
-  border-color: var(--hairline);
-}
-
-/* Section surfaces: each "room" of the page */
-.room-ivory {
-  --room: var(--ivory);
-  background-color: var(--room);
-}
-.room-white {
-  --room: var(--warm-white);
-  background-color: var(--room);
-}
-.room-linen {
-  --room: var(--linen);
-  background-color: var(--room);
-}
-.room-stone {
-  --room: var(--stone);
-  background-color: var(--room);
-}
-.room-slate {
-  --room: var(--slate-deep);
-  background-color: var(--room);
-  color: var(--ivory);
-}
-
-/* Photography frames */
-.photo {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--radius);
-  background-color: var(--stone);
-  isolation: isolate;
-}
-.photo-bleed {
-  position: relative;
-  overflow: hidden;
-  background-color: var(--stone);
-  isolation: isolate;
-}
-
-/* Underline link used for inline text links */
-.link-line {
-  position: relative;
-  text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-size: 100% 1px;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  transition: background-size var(--duration) var(--ease-out);
-}
-.link-line:hover,
-.link-line:focus-visible {
-  background-size: 0% 1px;
-  background-position: 100% 100%;
-}
-
-/* Fine grain for the deep slate room, applied to a fixed pseudo layer only */
-.grain::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.05;
-  mix-blend-mode: soft-light;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-/* Hide scrollbar but keep scrolling for horizontal strips */
-.no-scrollbar {
-  scrollbar-width: none;
-}
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+  /* Hide scrollbar but keep scrolling for horizontal strips */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Contact icon choreography (CSS keyframes, all under 600ms) */

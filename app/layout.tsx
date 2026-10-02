@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
+import { HeadingMarks } from "@/components/motion/HeadingMarks";
+import { AnchorScroll } from "@/components/navigation/AnchorScroll";
 import { Header } from "@/components/navigation/Header";
 import { ScrollProgress } from "@/components/navigation/ScrollProgress";
 import { MotionProvider } from "@/components/providers/MotionProvider";
@@ -76,6 +78,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <StudioJsonLd />
         <MotionProvider>
+          <AnchorScroll />
+          <HeadingMarks />
           <ScrollProgress />
           <Header />
           <main id="main">{children}</main>

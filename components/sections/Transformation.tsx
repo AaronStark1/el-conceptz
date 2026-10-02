@@ -7,6 +7,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { transformationCopy } from "@/content/copy";
 import { sectionIds } from "@/content/navigation";
 import type { ResolvedPair } from "@/lib/images";
+import { easeOut } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 /**
@@ -62,19 +63,24 @@ export function Transformation({ pairs }: { pairs: ResolvedPair[] }) {
                           layoutId="pair-marker"
                           aria-hidden
                           className="absolute -left-px top-3 bottom-3 w-0.5 bg-brick"
-                          transition={{ type: "spring", stiffness: 320, damping: 34 }}
+                          transition={{ type: "tween", duration: 0.5, ease: easeOut }}
                         />
                       )}
                       <button
                         type="button"
                         onClick={() => setActiveId(pair.id)}
                         aria-pressed={isActive}
-                        className={cn(
-                          "flex w-full items-baseline justify-between gap-4 py-4 pl-5 text-left transition-colors duration-300 focus-visible:outline-offset-[-3px]",
-                          isActive ? "text-slate" : "text-slate-muted hover:text-teal-deep"
-                        )}
+                        className="group flex w-full items-baseline justify-between gap-4 py-4 pl-5 text-left focus-visible:outline-offset-[-3px]"
                       >
-                        <span className="font-display text-[1.375rem] leading-tight">
+                        {/* Colour lives on the span: the global button reset inherits colour. */}
+                        <span
+                          className={cn(
+                            "font-display text-[1.375rem] leading-tight transition-colors duration-300",
+                            isActive
+                              ? "text-teal-ink"
+                              : "text-slate-muted group-hover:text-teal-deep"
+                          )}
+                        >
                           {pair.title}
                         </span>
                         {pair.projectTitle && (

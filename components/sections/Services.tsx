@@ -89,12 +89,20 @@ export function Services({ groups }: { groups: ServiceGroup[] }) {
                           >
                             <h3
                               className={cn(
-                                "font-display text-[clamp(1.625rem,2.6vw,2.375rem)] leading-[1.1] transition-[color,transform] duration-500 ease-[var(--ease-out)]",
+                                "font-display relative text-[clamp(1.625rem,2.6vw,2.375rem)] leading-[1.1] transition-[color,translate] duration-500 ease-[var(--ease-out)]",
                                 isActive
-                                  ? "text-slate lg:translate-x-2 lg:text-teal-deep"
+                                  ? "text-slate lg:translate-x-1.5 lg:text-teal-deep"
                                   : "text-slate/70"
                               )}
                             >
+                              {/* Dimension line: a short teal rule draws in beside the active title on desktop. */}
+                              <span
+                                aria-hidden
+                                className={cn(
+                                  "absolute top-[0.6em] -left-6 hidden h-px w-4 origin-left bg-teal transition-transform duration-500 ease-[var(--ease-out)] lg:block",
+                                  isActive ? "scale-x-100" : "scale-x-0"
+                                )}
+                              />
                               {service.title}
                             </h3>
                             <p

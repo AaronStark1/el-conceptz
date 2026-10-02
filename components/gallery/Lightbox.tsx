@@ -7,6 +7,7 @@ import { Photo } from "@/components/ui/Photo";
 import type { LightboxRequest } from "@/components/gallery/LightboxProvider";
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
 import { easeOut } from "@/lib/motion";
+import { cn } from "@/lib/utils";
 
 interface LightboxProps {
   request: LightboxRequest | null;
@@ -16,6 +17,13 @@ interface LightboxProps {
 
 const SWIPE_DISTANCE = 70;
 const SWIPE_VELOCITY = 400;
+
+/* Controls warm to teal-light on hover and focus. The colour sits on the icon because the
+   global button reset inherits colour over utilities. */
+const controlIcon =
+  "h-5 w-5 text-ivory/80 transition-colors duration-300 ease-[var(--ease-out)] group-hover:text-teal-light group-focus-visible:text-teal-light";
+const stepButton =
+  "group absolute top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-ivory/20 transition-colors duration-300 ease-[var(--ease-out)] hover:border-teal-light focus-visible:border-teal-light sm:inline-flex";
 
 /**
  * Full-screen viewer. Keyboard: Escape closes, arrows step. Touch: swipe to step.
@@ -93,9 +101,9 @@ export function Lightbox({ request, onClose, onIndexChange }: LightboxProps) {
               type="button"
               onClick={onClose}
               aria-label="Close viewer"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-ivory/80 transition-colors hover:bg-teal-light/10 hover:text-teal-light"
+              className="group inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors duration-300 ease-[var(--ease-out)] hover:bg-teal-light/10 focus-visible:bg-teal-light/10"
             >
-              <X className="h-5 w-5" strokeWidth={1.75} aria-hidden />
+              <X className={controlIcon} strokeWidth={1.75} aria-hidden />
             </button>
           </div>
 
@@ -146,9 +154,9 @@ export function Lightbox({ request, onClose, onIndexChange }: LightboxProps) {
                     step(-1);
                   }}
                   aria-label="Previous photograph"
-                  className="absolute left-3 top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-ivory/20 text-ivory/80 transition-colors hover:border-teal-light hover:text-teal-light sm:inline-flex"
+                  className={cn(stepButton, "left-3")}
                 >
-                  <ChevronLeft className="h-5 w-5" strokeWidth={1.75} aria-hidden />
+                  <ChevronLeft className={controlIcon} strokeWidth={1.75} aria-hidden />
                 </button>
                 <button
                   type="button"
@@ -157,9 +165,9 @@ export function Lightbox({ request, onClose, onIndexChange }: LightboxProps) {
                     step(1);
                   }}
                   aria-label="Next photograph"
-                  className="absolute right-3 top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-ivory/20 text-ivory/80 transition-colors hover:border-teal-light hover:text-teal-light sm:inline-flex"
+                  className={cn(stepButton, "right-3")}
                 >
-                  <ChevronRight className="h-5 w-5" strokeWidth={1.75} aria-hidden />
+                  <ChevronRight className={controlIcon} strokeWidth={1.75} aria-hidden />
                 </button>
               </>
             )}

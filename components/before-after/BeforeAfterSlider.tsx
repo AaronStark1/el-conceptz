@@ -83,6 +83,8 @@ export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
   const onPointerDown = (e: PointerEvent<HTMLDivElement>) => {
     if (e.pointerType === "mouse" && e.button !== 0) return;
     dragging.current = true;
+    // Pressed look is pure CSS off this attribute, so the drag never waits on a re-render.
+    e.currentTarget.dataset.dragging = "true";
     takeOver();
     e.currentTarget.setPointerCapture(e.pointerId);
     updateFromClientX(e.clientX);
@@ -93,6 +95,7 @@ export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
   };
   const endDrag = () => {
     dragging.current = false;
+    frameRef.current?.removeAttribute("data-dragging");
   };
 
   const onKeyDown = (e: KeyboardEvent<HTMLButtonElement>) => {
@@ -155,7 +158,7 @@ export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
           </motion.div>
         </AnimatePresence>
 
-        <span className="text-label pointer-events-none absolute left-4 top-4 rounded-md bg-slate/80 px-2.5 py-2 text-ivory backdrop-blur-sm">
+        <span className="text-label pointer-events-none absolute left-4 top-4 rounded-md bg-[var(--slate-deep)]/80 px-2.5 py-2 text-ivory backdrop-blur-sm">
           {transformationCopy.beforeLabel}
         </span>
         <span className="text-label pointer-events-none absolute right-4 top-4 rounded-md bg-teal-deep/95 px-2.5 py-2 text-ivory backdrop-blur-sm">
@@ -163,9 +166,13 @@ export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
         </span>
 
         <motion.div
-          className="pointer-events-none absolute inset-y-0 w-px bg-ivory/90 shadow-[0_0_0_1px_rgb(47_57_65/0.18)]"
+          className="pointer-events-none absolute inset-y-0 w-0.5 -translate-x-1/2 bg-teal shadow-[0_0_0_1px_rgb(247_244_239/0.55)]"
           style={{ left }}
         >
+          <span
+            aria-hidden
+            className="pointer-events-none absolute left-1/2 top-3 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-brick shadow-[0_0_0_1px_rgb(247_244_239/0.55)]"
+          />
           <button
             ref={knobRef}
             type="button"
@@ -178,12 +185,14 @@ export function BeforeAfterSlider({ pair, className }: BeforeAfterSliderProps) {
             onKeyDown={onKeyDown}
             onFocus={takeOver}
             className={cn(
-              "pointer-events-auto absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-ivory text-slate shadow-[0_8px_24px_-8px_rgb(47_57_65/0.5)] ring-brick transition-[box-shadow,transform] duration-300 group-hover:ring-2 focus-visible:outline-none focus-visible:ring-2 sm:h-12 sm:w-12",
+              // Centred with `transform` rather than Tailwind's `translate` so the knob-breathe
+              // keyframes (which set transform) replace it instead of stacking a second offset.
+              "pointer-events-auto absolute left-1/2 top-1/2 flex h-11 w-11 [transform:translate(-50%,-50%)] items-center justify-center rounded-full border-[1.5px] border-teal bg-ivory shadow-[0_8px_24px_-8px_rgb(47_57_65/0.5)] ring-brick transition-[box-shadow,transform] duration-200 ease-[var(--ease-out)] group-hover:ring-2 group-hover:ring-teal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick group-data-[dragging=true]:ring-2 group-data-[dragging=true]:ring-teal group-data-[dragging=true]:[transform:translate(-50%,-50%)_scale(1.06)] sm:h-12 sm:w-12",
               !interacted && !reduce && "knob-breathe"
             )}
           >
-            <ChevronLeft className="h-4 w-4 -mr-0.5" strokeWidth={2} aria-hidden />
-            <ChevronRight className="h-4 w-4 -ml-0.5" strokeWidth={2} aria-hidden />
+            <ChevronLeft className="-mr-0.5 h-4 w-4 text-teal-deep" strokeWidth={2} aria-hidden />
+            <ChevronRight className="-ml-0.5 h-4 w-4 text-teal-deep" strokeWidth={2} aria-hidden />
           </button>
         </motion.div>
       </div>

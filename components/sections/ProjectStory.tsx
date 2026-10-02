@@ -82,18 +82,22 @@ export function ProjectStory({ project }: { project: ResolvedProject }) {
                 </AnimatePresence>
               </div>
               <div className="mt-4 flex items-center justify-between gap-6">
-                <p className="text-meta">{current.title}</p>
+                <p className="text-meta inline-flex items-center gap-3">
+                  <span aria-hidden className="h-px w-4 shrink-0 bg-teal" />
+                  {current.title}
+                </p>
+                {/* Colour lives on the children: the global button reset inherits colour over utilities. */}
                 <button
                   type="button"
                   onClick={() => open({ photos, index: 0, label: project.title })}
-                  className="group inline-flex items-center gap-2 text-[0.8125rem] font-bold tracking-[0.06em] text-teal-deep"
+                  className="group inline-flex items-center gap-2 text-[0.8125rem] font-bold tracking-[0.08em]"
                 >
-                  <span className="link-line">{workCopy.viewProject}</span>
+                  <span className="link-line text-teal-deep">{workCopy.viewProject}</span>
                   <span className="text-slate-muted">{photos.length}</span>
                   <ArrowUpRight
                     aria-hidden
                     strokeWidth={1.75}
-                    className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    className="h-4 w-4 text-teal-deep transition-transform duration-300 ease-[var(--ease-out)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                   />
                 </button>
               </div>

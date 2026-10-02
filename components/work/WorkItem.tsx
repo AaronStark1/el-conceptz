@@ -28,11 +28,14 @@ export function WorkItem({ project, index }: WorkItemProps) {
   const view = (at = 0) => open({ photos, index: at, label: project.title });
   const headingId = `work-${project.id}`;
 
+  /** Category reads as a small teal stamp; location and year stay quiet on the same baseline. */
   const meta = (
-    <p className="text-meta flex flex-wrap gap-x-5 gap-y-1">
-      <span className="text-teal-deep">{categoryLabels[project.category]}</span>
-      {project.location && <span>{project.location}</span>}
-      {project.year && <span>{project.year}</span>}
+    <p className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+      <span className="inline-flex items-center rounded-[4px] border border-teal/25 bg-teal/[0.08] px-2.5 py-[0.3rem] text-[0.6875rem] leading-none font-bold tracking-[0.12em] uppercase text-teal-deep">
+        {categoryLabels[project.category]}
+      </span>
+      {project.location && <span className="text-meta">{project.location}</span>}
+      {project.year && <span className="text-meta">{project.year}</span>}
     </p>
   );
 
@@ -61,17 +64,18 @@ export function WorkItem({ project, index }: WorkItemProps) {
           ))}
         </ul>
       )}
+      {/* Colour lives on the children: the global button reset inherits colour over utilities. */}
       <button
         type="button"
         onClick={() => view(0)}
-        className="group mt-8 inline-flex items-center gap-2 text-[0.8125rem] font-bold tracking-[0.06em] text-teal-deep"
+        className="group mt-8 inline-flex items-center gap-2 text-[0.8125rem] font-bold tracking-[0.08em]"
       >
-        <span className="link-line">{workCopy.viewProject}</span>
+        <span className="link-line text-teal-deep">{workCopy.viewProject}</span>
         <span className="text-slate-muted">{photos.length}</span>
         <ArrowUpRight
           aria-hidden
           strokeWidth={1.75}
-          className="h-4 w-4 transition-transform duration-300 ease-[var(--ease-out)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+          className="h-4 w-4 text-teal-deep transition-transform duration-300 ease-[var(--ease-out)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
         />
       </button>
     </div>

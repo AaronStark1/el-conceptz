@@ -1,22 +1,14 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { logoColors } from "@/content/theme";
 import { MARK_VIEWBOX, markPaths } from "@/components/brand/LogoMark";
-import { easeOut } from "@/lib/motion";
 
 /**
- * The mark assembling itself: the teal bracket arrives from the left, the grey bracket
+ * The mark as three loose pieces, rendered in their starting positions (hidden, offset) so
+ * the page never flashes the assembled logo before the opening timeline runs. Opening.tsx
+ * animates them by `data-piece`: the teal bracket arrives from the left, the grey bracket
  * from the right, and the orange square is the last piece to lock into place.
  * Geometry is identical to the static LogoMark.
  */
-export function AnimatedMark({ className, delay = 0.45 }: { className?: string; delay?: number }) {
-  const piece = (from: { x?: number; y?: number; scale?: number }, at: number, duration = 1.1) => ({
-    initial: { opacity: 0, ...from },
-    animate: { opacity: 1, x: 0, y: 0, scale: 1 },
-    transition: { duration, delay: at, ease: easeOut },
-  });
-
+export function AnimatedMark({ className }: { className?: string }) {
   return (
     <svg
       viewBox={MARK_VIEWBOX}
@@ -26,17 +18,28 @@ export function AnimatedMark({ className, delay = 0.45 }: { className?: string; 
       xmlns="http://www.w3.org/2000/svg"
       overflow="visible"
     >
-      <motion.path d={markPaths.teal} fill={logoColors.teal} {...piece({ x: -22 }, delay)} />
-      <motion.path
+      <path
+        data-piece="teal"
+        d={markPaths.teal}
+        fill={logoColors.teal}
+        style={{ opacity: 0, transform: "translateX(-22px)" }}
+      />
+      <path
+        data-piece="gray"
         d={markPaths.gray}
         fill={logoColors.gray}
-        {...piece({ x: 22, y: 8 }, delay + 0.15)}
+        style={{ opacity: 0, transform: "translate(22px, 8px)" }}
       />
-      <motion.rect
+      <rect
+        data-piece="orange"
         {...markPaths.orange}
         fill={logoColors.orange}
-        style={{ transformBox: "fill-box", transformOrigin: "center" }}
-        {...piece({ scale: 0 }, delay + 0.75, 0.7)}
+        style={{
+          opacity: 0,
+          transform: "scale(0)",
+          transformBox: "fill-box",
+          transformOrigin: "center",
+        }}
       />
     </svg>
   );
